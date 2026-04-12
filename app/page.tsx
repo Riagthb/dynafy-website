@@ -47,8 +47,8 @@ const Plus = () => (
 const TRANSLATIONS = {
   nl: {
     // Nav
-    navLinks: ["Functies", "ZZP", "Prijzen", "FAQ"],
-    navHrefs: ["#functies", "#zzp", "#prijzen", "#faq"],
+    navLinks: ["Functies", "ZZP", "Prijzen", "FAQ", "Contact"],
+    navHrefs: ["#functies", "#zzp", "#prijzen", "#faq", "/contact"],
     login: "Inloggen",
     ctaNav: "Gratis starten",
     // Hero
@@ -114,8 +114,8 @@ const TRANSLATIONS = {
   },
   en: {
     // Nav
-    navLinks: ["Features", "Freelance", "Pricing", "FAQ"],
-    navHrefs: ["#functies", "#zzp", "#prijzen", "#faq"],
+    navLinks: ["Features", "Freelance", "Pricing", "FAQ", "Contact"],
+    navHrefs: ["#functies", "#zzp", "#prijzen", "#faq", "/contact"],
     login: "Log in",
     ctaNav: "Start for free",
     // Hero
