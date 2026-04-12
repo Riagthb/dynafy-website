@@ -1316,10 +1316,10 @@ export default function Home() {
             ))}
           </div>
 
-          <a href="https://dynafy-app.vercel.app" className="hide-mobile btn-ghost" style={{ padding: "9px 18px", fontSize: 14 }}>
+          <a href="https://app.dynafy.nl" className="hide-mobile btn-ghost" style={{ padding: "9px 18px", fontSize: 14 }}>
             {t.login}
           </a>
-          <a href="https://dynafy-app.vercel.app?mode=register" className="btn-cta" style={{ padding: "9px 18px", fontSize: 14 }}>
+          <a href="https://app.dynafy.nl?mode=register" className="btn-cta" style={{ padding: "9px 18px", fontSize: 14 }}>
             {t.ctaNav}
           </a>
         </div>
@@ -1365,7 +1365,7 @@ export default function Home() {
 
           {/* CTAs */}
           <div className="anim-4" style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap", marginBottom: 48 }}>
-            <a href="https://dynafy-app.vercel.app?mode=register" className="btn-cta">
+            <a href="https://app.dynafy.nl?mode=register" className="btn-cta">
               {t.heroCta1} <Arrow />
             </a>
             <a href="#functies" className="btn-ghost">
@@ -1506,7 +1506,7 @@ export default function Home() {
             <p style={{ fontSize: 15, lineHeight: 1.8, color: "#64748b", marginBottom: 32 }}>
               {t.zzpSub}
             </p>
-            <a href="https://dynafy-app.vercel.app?mode=register" className="btn-cta" style={{ background: "linear-gradient(135deg, #a855f7, #6366f1)", boxShadow: "0 4px 24px rgba(168,85,247,0.35)" }}>
+            <a href="https://app.dynafy.nl?mode=register" className="btn-cta" style={{ background: "linear-gradient(135deg, #a855f7, #6366f1)", boxShadow: "0 4px 24px rgba(168,85,247,0.35)" }}>
               {t.zzpCta} <Arrow />
             </a>
           </div>
@@ -1601,7 +1601,7 @@ export default function Home() {
                   ))}
                 </div>
 
-                <a href="https://dynafy-app.vercel.app?mode=register" style={{
+                <a href="https://app.dynafy.nl?mode=register" style={{
                   display: "flex", alignItems: "center", justifyContent: "center", gap: 8,
                   padding: "12px", borderRadius: 11,
                   background: plan.ctaStyle === "purple" ? "linear-gradient(135deg, #a855f7, #6366f1)"
@@ -1679,7 +1679,7 @@ export default function Home() {
           <p style={{ fontSize: 16, color: "#64748b", marginBottom: 40 }}>
             {t.finalSub}
           </p>
-          <a href="https://dynafy-app.vercel.app?mode=register" className="btn-cta" style={{ fontSize: 17, padding: "17px 36px" }}>
+          <a href="https://app.dynafy.nl?mode=register" className="btn-cta" style={{ fontSize: 17, padding: "17px 36px" }}>
             {t.finalCta} <Arrow />
           </a>
           <p style={{ marginTop: 20, fontSize: 13, color: "#334155" }}>
