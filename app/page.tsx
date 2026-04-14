@@ -109,7 +109,7 @@ const TRANSLATIONS = {
     finalSocial: "Al meer dan 500 ZZP\u2019ers en particulieren gingen je voor.",
     // Footer
     footerLinks: ["Privacy", "Voorwaarden", "Contact"],
-    footerLinksHrefs: ["/privacy", "/voorwaarden", "/contact"],
+    footerLinksHrefs: ["https://app.dynafy.nl/privacy.html", "https://app.dynafy.nl/terms.html", "/contact"],
     footerCopy: "Alle rechten voorbehouden",
   },
   en: {
@@ -176,7 +176,7 @@ const TRANSLATIONS = {
     finalSocial: "More than 500 freelancers and individuals have gone before you.",
     // Footer
     footerLinks: ["Privacy", "Terms", "Contact"],
-    footerLinksHrefs: ["/privacy", "/terms", "/contact"],
+    footerLinksHrefs: ["https://app.dynafy.nl/privacy.html", "https://app.dynafy.nl/terms.html", "/contact"],
     footerCopy: "All rights reserved",
   },
 } as const;
@@ -1700,7 +1700,10 @@ export default function Home() {
           {/* Links */}
           <div style={{ display: "flex", gap: 24, flexWrap: "wrap" }}>
             {t.footerLinks.map((l, i) => (
-              <a key={l} href={t.footerLinksHrefs[i]} style={{ fontSize: 13, color: "#334155", textDecoration: "none", transition: "color 0.15s" }}
+              <a key={l} href={t.footerLinksHrefs[i]}
+                target={t.footerLinksHrefs[i].startsWith("http") ? "_blank" : undefined}
+                rel={t.footerLinksHrefs[i].startsWith("http") ? "noopener noreferrer" : undefined}
+                style={{ fontSize: 13, color: "#334155", textDecoration: "none", transition: "color 0.15s" }}
                 onMouseEnter={e => (e.currentTarget.style.color = "#64748b")}
                 onMouseLeave={e => (e.currentTarget.style.color = "#334155")}>
                 {l}
