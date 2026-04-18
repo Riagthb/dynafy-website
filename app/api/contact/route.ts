@@ -1,12 +1,16 @@
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
+const smtpPort = Number(process.env.SMTP_PORT ?? 465);
 const transporter = nodemailer.createTransport({
-  host: "smtp.mijndomein.nl",
-  port: 587,
-  secure: false,
+  host: process.env.SMTP_HOST ?? "smtp.resend.com",
+  port: smtpPort,
+  // 465 = implicit TLS (secure=true), 587 = STARTTLS (secure=false)
+  secure: process.env.SMTP_SECURE
+    ? process.env.SMTP_SECURE === "true"
+    : smtpPort === 465,
   auth: {
-    user: "contact@dynafy.nl",
+    user: process.env.SMTP_USER ?? "resend",
     pass: process.env.SMTP_PASSWORD,
   },
 });
