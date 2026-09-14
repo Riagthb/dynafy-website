@@ -47,31 +47,32 @@ const Plus = () => (
 const TRANSLATIONS = {
   nl: {
     // Nav
-    navLinks: ["Functies", "ZZP", "Prijzen", "FAQ", "Contact"],
-    navHrefs: ["#functies", "#zzp", "#prijzen", "#faq", "/contact"],
+    // ZZP-first (Ranny 2026-09-14)
+    navLinks: ["ZZP", "Prijzen", "Functies", "FAQ", "Contact"],
+    navHrefs: ["#zzp", "#prijzen", "#functies", "#faq", "/contact"],
     login: "Inloggen",
     ctaNav: "Gratis starten",
-    // Hero
-    badge: "AI Powered",
-    h1a: "Jouw financiën",
-    h1b: "volledig in beeld door AI",
-    h1c: "privé en zakelijk",
-    heroSub: "Dynafy combineert persoonlijk financieel beheer met volledige ZZP-administratie. Transacties, facturen, BTW en inzichten, alles op één plek.",
-    heroCta1: "Gratis beginnen",
-    heroCta2: "Bekijk functies",
+    // Hero — ZZP-first
+    badge: "Voor ZZP'ers",
+    h1a: "Jouw complete",
+    h1b: "ZZP-administratie",
+    h1c: "in één app",
+    heroSub: "Facturen versturen, kosten bijhouden, BTW berekenen — alles op één plek. Plus persoonlijke financiën als je dat wilt. Zonder los boekhoudpakket.",
+    heroCta1: "Gratis ZZP-account starten",
+    heroCta2: "Bekijk hoe het werkt",
     trustLine: "✓ Geen creditcard nodig \u00a0·\u00a0 ✓ Gratis plan altijd beschikbaar \u00a0·\u00a0 ✓ Opgezegd wanneer je wil",
     // App preview
     appPreviewLabel: "Het product",
-    appPreviewSub: "Alles overzichtelijk op één scherm — saldo, cashflow, investeringen, transacties en meer.",
+    appPreviewSub: "Van factuur tot BTW-overzicht — één app voor je hele administratie.",
     // Social proof
-    stat1Label: "Actieve gebruikers",
+    stat1Label: "Actieve ZZP'ers",
     stat2Label: "Gemiddelde beoordeling",
     stat3Label: "Om te beginnen",
-    // Features section
-    featuresLabel: "Functies",
-    featuresH2a: "Alles wat je nodig hebt,",
-    featuresH2b: "niets wat je niet nodig hebt",
-    featuresSub: "Van budgetteren tot investeringen bijhouden — Dynafy heeft het allemaal, zonder gedoe.",
+    // Features section — nu 'ook voor privé'
+    featuresLabel: "Ook voor privé",
+    featuresH2a: "En ook je persoonlijke",
+    featuresH2b: "financiën — als je dat wilt",
+    featuresSub: "Dynafy is ZZP-first, maar heeft óók alles voor je privéfinanciën: budgetteren, sparen, investeringen. Alles in dezelfde app zonder extra kosten.",
     // How it works
     howLabel: "Hoe het werkt",
     howH2: "In 3 stappen live",
@@ -79,34 +80,34 @@ const TRANSLATIONS = {
     investLabel: "Investeringen",
     investH2: "Al je beleggingen op één plek",
     investSub: "Crypto, aandelen, goud — live koersen, één overzicht. Altijd weten wat je portfolio waard is.",
-    // ZZP section
+    // ZZP section — nu de hoofdsectie
     zzpLabel: "Voor ZZP'ers",
-    zzpH2a: "Jouw complete",
-    zzpH2b: "ZZP-administratie",
-    zzpH2c: "— ingebouwd",
-    zzpSub: "Geen losse boekhoudpakket meer. Dynafy combineert je privéfinanciën met je zakelijke administratie. Facturen versturen, kosten bijhouden, BTW berekenen — vanuit één app.",
-    zzpCta: "Probeer ZZP gratis →",
+    zzpH2a: "Alles wat je als",
+    zzpH2b: "ZZP'er nodig hebt",
+    zzpH2c: "",
+    zzpSub: "Facturen, kosten, bonnen, BTW en een boekhouder-portaal — allemaal ingebouwd. Geen los boekhoudpakket meer nodig.",
+    zzpCta: "Gratis ZZP-account starten →",
     // ZZP Mockup section
-    zzpMockupLabel: "ZZP Facturen",
+    zzpMockupLabel: "Facturen",
     zzpMockupH2: "Van concept naar betaald — in minuten",
-    zzpMockupSub: "Facturen aanmaken, versturen en bijhouden. Inclusief live preview en automatische BTW-berekening.",
+    zzpMockupSub: "Facturen aanmaken, versturen en bijhouden. Live preview en automatische BTW-berekening ingebouwd.",
     // Pricing
     pricingLabel: "Prijzen",
     pricingH2: "Transparant. Geen verborgen kosten.",
     pricingSub: "Maandelijks opzegbaar · Alle prijzen excl. BTW",
     // Testimonials
     testimonialsLabel: "Ervaringen",
-    testimonialsH2: "Wat gebruikers zeggen",
+    testimonialsH2: "Wat ZZP'ers zeggen",
     // FAQ
     faqLabel: "FAQ",
     faqH2: "Veelgestelde vragen",
     // Final CTA
-    finalH2a: "Klaar om grip te krijgen",
-    finalH2b: "op je",
-    finalH2c: "financiën?",
+    finalH2a: "Klaar om je",
+    finalH2b: "administratie",
+    finalH2c: "te vereenvoudigen?",
     finalSub: "Start gratis. Geen creditcard. Geen verplichtingen.",
-    finalCta: "Gratis starten — nu direct",
-    finalSocial: "Al meer dan 500 ZZP\u2019ers en particulieren gingen je voor.",
+    finalCta: "Gratis ZZP-account starten",
+    finalSocial: "Al meer dan 500 ZZP\u2019ers gingen je voor.",
     // Footer
     footerLinks: ["Privacy", "Voorwaarden", "Contact"],
     footerLinksHrefs: ["https://app.dynafy.nl/privacy.html", "https://app.dynafy.nl/terms.html", "/contact"],
@@ -114,31 +115,31 @@ const TRANSLATIONS = {
   },
   en: {
     // Nav
-    navLinks: ["Features", "Freelance", "Pricing", "FAQ", "Contact"],
-    navHrefs: ["#functies", "#zzp", "#prijzen", "#faq", "/contact"],
+    navLinks: ["Freelance", "Pricing", "Features", "FAQ", "Contact"],
+    navHrefs: ["#zzp", "#prijzen", "#functies", "#faq", "/contact"],
     login: "Log in",
     ctaNav: "Start for free",
     // Hero
-    badge: "AI Powered",
-    h1a: "Your finances",
-    h1b: "fully in view",
-    h1c: "private and business",
-    heroSub: "Dynafy combines personal financial management with complete freelance administration. Transactions, invoices, VAT and insights, all in one place.",
-    heroCta1: "Start for free",
-    heroCta2: "View features",
+    badge: "For freelancers",
+    h1a: "Your complete",
+    h1b: "freelance administration",
+    h1c: "in one app",
+    heroSub: "Send invoices, track expenses, calculate VAT — all in one place. Plus personal finances if you want. No separate accounting package needed.",
+    heroCta1: "Start free freelance account",
+    heroCta2: "See how it works",
     trustLine: "✓ No credit card needed \u00a0·\u00a0 ✓ Free plan always available \u00a0·\u00a0 ✓ Cancel whenever you want",
     // App preview
     appPreviewLabel: "The product",
-    appPreviewSub: "Everything clearly on one screen — balance, cashflow, investments, transactions and more.",
+    appPreviewSub: "From invoice to VAT overview — one app for your entire administration.",
     // Social proof
-    stat1Label: "Active users",
+    stat1Label: "Active freelancers",
     stat2Label: "Average rating",
     stat3Label: "To get started",
     // Features section
-    featuresLabel: "Features",
-    featuresH2a: "Everything you need,",
-    featuresH2b: "nothing you don\u2019t",
-    featuresSub: "From budgeting to tracking investments — Dynafy has it all, without the hassle.",
+    featuresLabel: "Also for personal",
+    featuresH2a: "And your personal",
+    featuresH2b: "finances too \u2014 if you want",
+    featuresSub: "Dynafy is freelance-first, but it also has everything for your personal finances: budgeting, saving, investments. All in the same app at no extra cost.",
     // How it works
     howLabel: "How it works",
     howH2: "Live in 3 steps",
@@ -146,34 +147,34 @@ const TRANSLATIONS = {
     investLabel: "Investments",
     investH2: "All your investments in one place",
     investSub: "Crypto, stocks, gold — live rates, one overview. Always know what your portfolio is worth.",
-    // ZZP section
-    zzpLabel: "For Freelancers",
-    zzpH2a: "Your complete",
-    zzpH2b: "freelance administration",
-    zzpH2c: "— built in",
-    zzpSub: "No more separate accounting packages. Dynafy combines your personal finances with your business administration. Send invoices, track expenses, calculate VAT — from one app.",
-    zzpCta: "Try Freelance for free →",
+    // ZZP section — main
+    zzpLabel: "For freelancers",
+    zzpH2a: "Everything a",
+    zzpH2b: "freelancer needs",
+    zzpH2c: "",
+    zzpSub: "Invoices, expenses, receipts, VAT and an accountant portal — all built in. No separate accounting package needed.",
+    zzpCta: "Start free freelance account →",
     // ZZP Mockup section
-    zzpMockupLabel: "Freelance Invoices",
+    zzpMockupLabel: "Invoices",
     zzpMockupH2: "From draft to paid — in minutes",
-    zzpMockupSub: "Create, send and track invoices. Including live preview and automatic VAT calculation.",
+    zzpMockupSub: "Create, send and track invoices. Live preview and automatic VAT calculation built in.",
     // Pricing
     pricingLabel: "Pricing",
     pricingH2: "Transparent. No hidden costs.",
     pricingSub: "Cancel monthly · All prices excl. VAT",
     // Testimonials
     testimonialsLabel: "Reviews",
-    testimonialsH2: "What users say",
+    testimonialsH2: "What freelancers say",
     // FAQ
     faqLabel: "FAQ",
     faqH2: "Frequently asked questions",
     // Final CTA
-    finalH2a: "Ready to get a grip on",
+    finalH2a: "Ready to simplify",
     finalH2b: "your",
-    finalH2c: "finances?",
+    finalH2c: "administration?",
     finalSub: "Start for free. No credit card. No obligations.",
-    finalCta: "Start for free — right now",
-    finalSocial: "More than 500 freelancers and individuals have gone before you.",
+    finalCta: "Start free freelance account",
+    finalSocial: "More than 500 freelancers have gone before you.",
     // Footer
     footerLinks: ["Privacy", "Terms", "Contact"],
     footerLinksHrefs: ["https://app.dynafy.nl/privacy.html", "https://app.dynafy.nl/terms.html", "/contact"],
@@ -280,47 +281,6 @@ const ZZP_FEATURES_EN = [
 
 const PLANS_NL = [
   {
-    name: "Gratis",
-    price: "€0",
-    per: "",
-    desc: "Om kennis te maken",
-    color: "#64748b",
-    featured: false,
-    badge: "",
-    features: [
-      "1 bankrekening of 1 ZZP-bedrijf",
-      "CSV import",
-      "Transactieoverzicht (3 maanden)",
-      "Basis categorisatie",
-      "Vaste lasten overzicht",
-      "Max. 3 facturen per maand",
-    ],
-    cta: "Gratis starten",
-    ctaStyle: "ghost",
-  },
-  {
-    name: "Premium",
-    price: "€5,99",
-    per: "/maand",
-    yearly: "of €49/jaar",
-    desc: "Voor de serieuze particulier",
-    color: "#4f8ef7",
-    featured: false,
-    badge: "",
-    features: [
-      "Alles van Gratis",
-      "Onbeperkte rekeningen",
-      "Volledige transactiehistorie",
-      "AI-categorisatie",
-      "Investeringsportefeuille",
-      "Spaar- & doelen tracker",
-      "Budgetten per categorie",
-      "Export naar Excel / PDF",
-    ],
-    cta: "Starten met Premium",
-    ctaStyle: "blue",
-  },
-  {
     name: "ZZP Premium",
     price: "€17,99",
     per: "/maand",
@@ -366,50 +326,50 @@ const PLANS_NL = [
     cta: "Starten met Diamond",
     ctaStyle: "amber",
   },
-];
-
-const PLANS_EN = [
-  {
-    name: "Gratis",
-    price: "€0",
-    per: "",
-    desc: "To get acquainted",
-    color: "#64748b",
-    featured: false,
-    badge: "",
-    features: [
-      "1 bank account or 1 freelance company",
-      "CSV import",
-      "Transaction overview (3 months)",
-      "Basic categorisation",
-      "Fixed costs overview",
-      "Max. 3 invoices per month",
-    ],
-    cta: "Start for free",
-    ctaStyle: "ghost",
-  },
   {
     name: "Premium",
     price: "€5,99",
-    per: "/month",
-    yearly: "or €49/year",
-    desc: "For the serious individual",
+    per: "/maand",
+    yearly: "of €49/jaar",
+    desc: "Alleen persoonlijke financiën",
     color: "#4f8ef7",
     featured: false,
     badge: "",
     features: [
-      "Everything from Free",
-      "Unlimited accounts",
-      "Full transaction history",
-      "AI categorisation",
-      "Investment portfolio",
-      "Savings & goals tracker",
-      "Budgets per category",
-      "Export to Excel / PDF",
+      "Voor particulieren zonder ZZP",
+      "Onbeperkte bankrekeningen",
+      "Volledige transactiehistorie",
+      "AI-categorisatie",
+      "Investeringsportefeuille",
+      "Spaar- & doelen tracker",
+      "Budgetten per categorie",
+      "Export naar Excel / PDF",
     ],
-    cta: "Start with Premium",
+    cta: "Starten met Premium",
     ctaStyle: "blue",
   },
+  {
+    name: "Gratis",
+    price: "€0",
+    per: "",
+    desc: "Om kennis te maken",
+    color: "#64748b",
+    featured: false,
+    badge: "",
+    features: [
+      "1 bankrekening of 1 ZZP-bedrijf",
+      "CSV import",
+      "Transactieoverzicht (3 maanden)",
+      "Basis categorisatie",
+      "Vaste lasten overzicht",
+      "Max. 3 facturen per maand",
+    ],
+    cta: "Gratis starten",
+    ctaStyle: "ghost",
+  },
+];
+
+const PLANS_EN = [
   {
     name: "ZZP Premium",
     price: "€17,99",
@@ -455,6 +415,47 @@ const PLANS_EN = [
     ],
     cta: "Start with Diamond",
     ctaStyle: "amber",
+  },
+  {
+    name: "Premium",
+    price: "€5,99",
+    per: "/month",
+    yearly: "or €49/year",
+    desc: "Personal finances only",
+    color: "#4f8ef7",
+    featured: false,
+    badge: "",
+    features: [
+      "For individuals without freelance",
+      "Unlimited bank accounts",
+      "Full transaction history",
+      "AI categorisation",
+      "Investment portfolio",
+      "Savings & goals tracker",
+      "Budgets per category",
+      "Export to Excel / PDF",
+    ],
+    cta: "Start with Premium",
+    ctaStyle: "blue",
+  },
+  {
+    name: "Gratis",
+    price: "€0",
+    per: "",
+    desc: "To get acquainted",
+    color: "#64748b",
+    featured: false,
+    badge: "",
+    features: [
+      "1 bank account or 1 freelance company",
+      "CSV import",
+      "Transaction overview (3 months)",
+      "Basic categorisation",
+      "Fixed costs overview",
+      "Max. 3 invoices per month",
+    ],
+    cta: "Start for free",
+    ctaStyle: "ghost",
   },
 ];
 
@@ -563,19 +564,19 @@ const STEPS_NL = [
     num: "01",
     color: "#4f8ef7",
     title: "Maak een gratis account aan",
-    desc: "In 30 seconden live. Geen creditcard nodig. Kies of je als particulier of ZZP'er wil beginnen.",
+    desc: "In 30 seconden live. Geen creditcard nodig.",
   },
   {
     num: "02",
     color: "#a855f7",
-    title: "Upload je bankafschrift",
-    desc: "Exporteer een CSV van je bank en upload het. Dynafy verwerkt automatisch alle transacties.",
+    title: "Vul je bedrijfsgegevens in",
+    desc: "Bedrijfsnaam, KvK, BTW en IBAN. Je kunt het ook overslaan en later invullen.",
   },
   {
     num: "03",
     color: "#22c55e",
-    title: "Krijg direct inzicht",
-    desc: "Zie meteen je uitgavenpatroon, vaste lasten, spaarmogelijkheden en meer, alles op één plek.",
+    title: "Verstuur je eerste factuur",
+    desc: "Klant kiezen, regels toevoegen, BTW automatisch — versturen per mail met PDF-bijlage.",
   },
 ];
 
@@ -584,19 +585,19 @@ const STEPS_EN = [
     num: "01",
     color: "#4f8ef7",
     title: "Create a free account",
-    desc: "In 30 seconds. No credit card needed. Choose whether to start as an individual or freelancer.",
+    desc: "Live in 30 seconds. No credit card needed.",
   },
   {
     num: "02",
     color: "#a855f7",
-    title: "Upload your bank statement",
-    desc: "Export a CSV from your bank and upload it. Dynafy automatically processes all transactions.",
+    title: "Fill in your company details",
+    desc: "Company name, KvK, VAT and IBAN. You can skip it and fill in later.",
   },
   {
     num: "03",
     color: "#22c55e",
-    title: "Get instant insight",
-    desc: "Immediately see your spending pattern, fixed costs, savings opportunities and more, all in one place.",
+    title: "Send your first invoice",
+    desc: "Choose a client, add lines, VAT calculated automatically — send by email with PDF attachment.",
   },
 ];
 
@@ -1422,77 +1423,11 @@ export default function Home() {
       </div>
 
       {/* ── FEATURES ── */}
-      <section id="functies" style={{ padding: "100px 40px", maxWidth: 1200, margin: "0 auto" }}>
-        <div style={{ textAlign: "center", marginBottom: 64 }}>
-          <div style={{ fontSize: 13, fontWeight: 700, color: "#4f8ef7", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>{t.featuresLabel}</div>
-          <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, letterSpacing: "-0.02em", color: "#f1f5f9", marginBottom: 16 }}>
-            {t.featuresH2a}<br />{t.featuresH2b}
-          </h2>
-          <p style={{ fontSize: 16, color: "#64748b", maxWidth: 480, margin: "0 auto" }}>
-            {t.featuresSub}
-          </p>
-        </div>
+      {/* ZZP-first render order (Ranny 2026-09-14): ZZP-intro → ZZP-mockup →
+          Pricing → How it works → Features (privé, als 'ook voor privé') →
+          Investment mockup. Zie AGENTS-guide voor achtergrond. */}
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: 20 }}>
-          {FEATURES.map(f => (
-            <div key={f.title} className="card" style={{ padding: 28 }}>
-              <div style={{ width: 48, height: 48, borderRadius: 13, background: `${f.color}18`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 22, marginBottom: 18 }}>
-                {f.icon}
-              </div>
-              <h3 style={{ fontSize: 16, fontWeight: 700, color: "#f1f5f9", marginBottom: 8 }}>{f.title}</h3>
-              <p style={{ fontSize: 14, lineHeight: 1.7, color: "#64748b" }}>{f.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* ── HOW IT WORKS ── */}
-      <section style={{ padding: "80px 40px", background: "rgba(13,20,36,0.5)", borderTop: "1px solid rgba(255,255,255,0.05)", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-          <div style={{ textAlign: "center", marginBottom: 64 }}>
-            <div style={{ fontSize: 13, fontWeight: 700, color: "#22c55e", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>{t.howLabel}</div>
-            <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, letterSpacing: "-0.02em", color: "#f1f5f9" }}>
-              {t.howH2}
-            </h2>
-          </div>
-
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 32 }}>
-            {STEPS.map((s, i) => (
-              <div key={s.num} style={{ position: "relative", textAlign: "center", padding: "0 20px" }}>
-                <div style={{ width: 64, height: 64, borderRadius: 18, background: `${s.color}14`, border: `1px solid ${s.color}30`, display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px", fontSize: 22, fontWeight: 800, color: s.color, fontFamily: "monospace" }}>
-                  {s.num}
-                </div>
-                <h3 style={{ fontSize: 17, fontWeight: 700, color: "#f1f5f9", marginBottom: 10 }}>{s.title}</h3>
-                <p style={{ fontSize: 14, lineHeight: 1.7, color: "#64748b" }}>{s.desc}</p>
-                {i < STEPS.length - 1 && (
-                  <div className="hide-mobile" style={{ position: "absolute", top: 30, right: -16, fontSize: 20, color: "#1e293b" }}>→</div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── INVESTMENT SHOWCASE ── */}
-      <section style={{ padding: "100px 40px", background: "rgba(13,20,36,0.5)", borderTop: "1px solid rgba(255,255,255,0.05)", borderBottom: "1px solid rgba(255,255,255,0.05)", position: "relative", overflow: "hidden" }}>
-        <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: 700, height: 400, borderRadius: "50%", background: "radial-gradient(ellipse, rgba(245,158,11,0.07) 0%, transparent 70%)", pointerEvents: "none" }}/>
-        <div style={{ maxWidth: 1000, margin: "0 auto", position: "relative", zIndex: 1 }}>
-          <div style={{ textAlign: "center", marginBottom: 48 }}>
-            <div style={{ fontSize: 13, fontWeight: 700, color: "#f59e0b", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>{t.investLabel}</div>
-            <h2 style={{ fontSize: "clamp(26px, 3.5vw, 40px)", fontWeight: 800, color: "#f1f5f9", letterSpacing: "-0.02em", marginBottom: 14 }}>
-              {t.investH2}
-            </h2>
-            <p style={{ fontSize: 15, color: "#64748b", maxWidth: 460, margin: "0 auto" }}>
-              {t.investSub}
-            </p>
-          </div>
-          <div style={{ display: "flex", justifyContent: "center" }}>
-            <InvestmentMockup />
-          </div>
-        </div>
-      </section>
-
-      {/* ── ZZP SECTION ── */}
+      {/* ── ZZP SECTION (nu pos 3) ── */}
       <section id="zzp" style={{ padding: "100px 40px", maxWidth: 1200, margin: "0 auto" }}>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center" }}>
           {/* Left */}
@@ -1620,6 +1555,77 @@ export default function Home() {
                 </a>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── HOW IT WORKS (verplaatst na pricing) ── */}
+      <section style={{ padding: "80px 40px", background: "rgba(13,20,36,0.5)", borderTop: "1px solid rgba(255,255,255,0.05)", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+          <div style={{ textAlign: "center", marginBottom: 64 }}>
+            <div style={{ fontSize: 13, fontWeight: 700, color: "#22c55e", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>{t.howLabel}</div>
+            <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, letterSpacing: "-0.02em", color: "#f1f5f9" }}>
+              {t.howH2}
+            </h2>
+          </div>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 32 }}>
+            {STEPS.map((s, i) => (
+              <div key={s.num} style={{ position: "relative", textAlign: "center", padding: "0 20px" }}>
+                <div style={{ width: 64, height: 64, borderRadius: 18, background: `${s.color}14`, border: `1px solid ${s.color}30`, display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px", fontSize: 22, fontWeight: 800, color: s.color, fontFamily: "monospace" }}>
+                  {s.num}
+                </div>
+                <h3 style={{ fontSize: 17, fontWeight: 700, color: "#f1f5f9", marginBottom: 10 }}>{s.title}</h3>
+                <p style={{ fontSize: 14, lineHeight: 1.7, color: "#64748b" }}>{s.desc}</p>
+                {i < STEPS.length - 1 && (
+                  <div className="hide-mobile" style={{ position: "absolute", top: 30, right: -16, fontSize: 20, color: "#1e293b" }}>→</div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── FEATURES (privé — 'ook voor privé', verplaatst na how) ── */}
+      <section id="functies" style={{ padding: "100px 40px", maxWidth: 1200, margin: "0 auto" }}>
+        <div style={{ textAlign: "center", marginBottom: 64 }}>
+          <div style={{ fontSize: 13, fontWeight: 700, color: "#4f8ef7", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>{t.featuresLabel}</div>
+          <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, letterSpacing: "-0.02em", color: "#f1f5f9", marginBottom: 16 }}>
+            {t.featuresH2a}<br />{t.featuresH2b}
+          </h2>
+          <p style={{ fontSize: 16, color: "#64748b", maxWidth: 480, margin: "0 auto" }}>
+            {t.featuresSub}
+          </p>
+        </div>
+
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: 20 }}>
+          {FEATURES.map(f => (
+            <div key={f.title} className="card" style={{ padding: 28 }}>
+              <div style={{ width: 48, height: 48, borderRadius: 13, background: `${f.color}18`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 22, marginBottom: 18 }}>
+                {f.icon}
+              </div>
+              <h3 style={{ fontSize: 16, fontWeight: 700, color: "#f1f5f9", marginBottom: 8 }}>{f.title}</h3>
+              <p style={{ fontSize: 14, lineHeight: 1.7, color: "#64748b" }}>{f.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── INVESTMENT SHOWCASE (verplaatst na privé-features) ── */}
+      <section style={{ padding: "100px 40px", background: "rgba(13,20,36,0.5)", borderTop: "1px solid rgba(255,255,255,0.05)", borderBottom: "1px solid rgba(255,255,255,0.05)", position: "relative", overflow: "hidden" }}>
+        <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: 700, height: 400, borderRadius: "50%", background: "radial-gradient(ellipse, rgba(245,158,11,0.07) 0%, transparent 70%)", pointerEvents: "none" }}/>
+        <div style={{ maxWidth: 1000, margin: "0 auto", position: "relative", zIndex: 1 }}>
+          <div style={{ textAlign: "center", marginBottom: 48 }}>
+            <div style={{ fontSize: 13, fontWeight: 700, color: "#f59e0b", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>{t.investLabel}</div>
+            <h2 style={{ fontSize: "clamp(26px, 3.5vw, 40px)", fontWeight: 800, color: "#f1f5f9", letterSpacing: "-0.02em", marginBottom: 14 }}>
+              {t.investH2}
+            </h2>
+            <p style={{ fontSize: 15, color: "#64748b", maxWidth: 460, margin: "0 auto" }}>
+              {t.investSub}
+            </p>
+          </div>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <InvestmentMockup />
           </div>
         </div>
       </section>
