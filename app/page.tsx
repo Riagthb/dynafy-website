@@ -630,15 +630,15 @@ function AppMockup() {
   return (
     <div style={{
       borderRadius: 16, overflow: "hidden",
-      border: "1px solid rgba(255,255,255,0.1)",
-      boxShadow: "0 40px 120px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.05)",
+      border: "1px solid rgba(15,23,42,0.1)",
+      boxShadow: "0 40px 120px rgba(0,0,0,0.6), 0 0 0 1px rgba(15,23,42,0.06)",
       background: "#0a1020",
       maxWidth: 980, width: "100%",
     }}>
       {/* Browser chrome */}
       <div style={{
         height: 40, background: "#0d1526",
-        borderBottom: "1px solid rgba(255,255,255,0.07)",
+        borderBottom: "1px solid rgba(15,23,42,0.08)",
         display: "flex", alignItems: "center", padding: "0 16px", gap: 12,
       }}>
         <div style={{ display: "flex", gap: 6 }}>
@@ -647,7 +647,7 @@ function AppMockup() {
           ))}
         </div>
         <div style={{
-          flex: 1, height: 24, background: "rgba(255,255,255,0.05)", borderRadius: 6,
+          flex: 1, height: 24, background: "rgba(15,23,42,0.06)", borderRadius: 6,
           display: "flex", alignItems: "center", justifyContent: "center",
           fontSize: 11, color: "#475569", fontWeight: 500, letterSpacing: "0.01em",
         }}>
@@ -661,7 +661,7 @@ function AppMockup() {
         {/* Sidebar */}
         <div style={{
           width: 188, background: "#070c1a", flexShrink: 0,
-          borderRight: "1px solid rgba(255,255,255,0.05)",
+          borderRight: "1px solid rgba(15,23,42,0.06)",
           display: "flex", flexDirection: "column", padding: "16px 0",
         }}>
           {/* Logo */}
@@ -671,7 +671,7 @@ function AppMockup() {
               border: "1px solid rgba(79,142,247,0.3)",
               display: "flex", alignItems: "center", justifyContent: "center", fontSize: 14,
             }}>〜</div>
-            <span style={{ fontWeight: 800, fontSize: 14, color: "#f1f5f9", letterSpacing: "-0.02em" }}>Dynafy</span>
+            <span style={{ fontWeight: 800, fontSize: 14, color: "#0f172a", letterSpacing: "-0.02em" }}>Dynafy</span>
           </div>
 
           {/* Nav */}
@@ -691,30 +691,30 @@ function AppMockup() {
           </div>
 
           {/* Bottom */}
-          <div style={{ marginTop: "auto", padding: "12px 8px 0", borderTop: "1px solid rgba(255,255,255,0.05)" }}>
+          <div style={{ marginTop: "auto", padding: "12px 8px 0", borderTop: "1px solid rgba(15,23,42,0.06)" }}>
             <div style={{
               display: "flex", alignItems: "center", gap: 8, padding: "8px 10px",
             }}>
               <div style={{ width: 26, height: 26, borderRadius: "50%", background: "rgba(79,142,247,0.2)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 10, color: "#4f8ef7", fontWeight: 700 }}>JD</div>
               <div>
-                <div style={{ fontSize: 11, color: "#94a3b8", fontWeight: 600 }}>Jan de Vries</div>
-                <div style={{ fontSize: 10, color: "#334155" }}>Premium</div>
+                <div style={{ fontSize: 11, color: "#475569", fontWeight: 600 }}>Jan de Vries</div>
+                <div style={{ fontSize: 10, color: "#cbd5e1" }}>Premium</div>
               </div>
             </div>
           </div>
         </div>
 
         {/* Main content */}
-        <div style={{ flex: 1, background: "#080d18", padding: "20px 20px", overflowY: "hidden", display: "flex", flexDirection: "column", gap: 14 }}>
+        <div style={{ flex: 1, background: "#f5f7fb", padding: "20px 20px", overflowY: "hidden", display: "flex", flexDirection: "column", gap: 14 }}>
 
           {/* Header */}
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
             <div>
-              <div style={{ fontSize: 16, fontWeight: 800, color: "#f1f5f9", letterSpacing: "-0.02em" }}>Goedemiddag, Jan 👋</div>
+              <div style={{ fontSize: 16, fontWeight: 800, color: "#0f172a", letterSpacing: "-0.02em" }}>Goedemiddag, Jan 👋</div>
               <div style={{ fontSize: 11, color: "#475569", marginTop: 2 }}>Overzicht · april 2025</div>
             </div>
             <div style={{ display: "flex", gap: 8 }}>
-              <div style={{ padding: "5px 12px", borderRadius: 8, background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.08)", fontSize: 11, color: "#64748b" }}>Deze maand</div>
+              <div style={{ padding: "5px 12px", borderRadius: 8, background: "rgba(15,23,42,0.06)", border: "1px solid rgba(15,23,42,0.08)", fontSize: 11, color: "#64748b" }}>Deze maand</div>
             </div>
           </div>
 
@@ -726,12 +726,12 @@ function AppMockup() {
               { label: "Uitgaven",      value: "€1.847",  sub: "44% van inkomsten",  color: "#f43f5e",  bg: "rgba(244,63,94,0.1)"   },
             ].map(s => (
               <div key={s.label} style={{
-                background: "#0d1424", borderRadius: 12, padding: "14px 16px",
-                border: "1px solid rgba(255,255,255,0.06)",
+                background: "#ffffff", borderRadius: 12, padding: "14px 16px",
+                border: "1px solid rgba(15,23,42,0.08)",
               }}>
                 <div style={{ fontSize: 10, color: "#475569", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: 6 }}>{s.label}</div>
                 <div style={{ fontSize: 20, fontWeight: 800, color: s.color, letterSpacing: "-0.03em", fontVariantNumeric: "tabular-nums" }}>{s.value}</div>
-                <div style={{ fontSize: 10, color: "#334155", marginTop: 4 }}>{s.sub}</div>
+                <div style={{ fontSize: 10, color: "#cbd5e1", marginTop: 4 }}>{s.sub}</div>
               </div>
             ))}
           </div>
@@ -740,8 +740,8 @@ function AppMockup() {
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, flex: 1, minHeight: 0 }}>
 
             {/* Cashflow chart */}
-            <div style={{ background: "#0d1424", borderRadius: 12, padding: "14px 16px", border: "1px solid rgba(255,255,255,0.06)", overflow: "hidden" }}>
-              <div style={{ fontSize: 11, fontWeight: 700, color: "#94a3b8", marginBottom: 10 }}>Cashflow trend</div>
+            <div style={{ background: "#ffffff", borderRadius: 12, padding: "14px 16px", border: "1px solid rgba(15,23,42,0.08)", overflow: "hidden" }}>
+              <div style={{ fontSize: 11, fontWeight: 700, color: "#475569", marginBottom: 10 }}>Cashflow trend</div>
               <svg viewBox="0 0 380 90" width="100%" style={{ overflow: "visible" }}>
                 <defs>
                   <linearGradient id="mg-area" x1="0" y1="0" x2="0" y2="1">
@@ -755,7 +755,7 @@ function AppMockup() {
                 </defs>
                 {/* Grid lines */}
                 {[0, 30, 60, 90].map(y => (
-                  <line key={y} x1="0" y1={y} x2="380" y2={y} stroke="rgba(255,255,255,0.04)" strokeWidth="1"/>
+                  <line key={y} x1="0" y1={y} x2="380" y2={y} stroke="rgba(15,23,42,0.04)" strokeWidth="1"/>
                 ))}
                 <path d={areaD} fill="url(#mg-area)"/>
                 <path d={lineD} fill="none" stroke="url(#mg-line)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -764,7 +764,7 @@ function AppMockup() {
                 <circle cx="380" cy="8" r="6" fill="#a855f7" opacity="0.2"/>
                 {/* Month labels */}
                 {["Jan","Feb","Mar","Apr"].map((m, i) => (
-                  <text key={m} x={i * 120 + 10} y="88" fontSize="9" fill="#334155" fontWeight="600">{m}</text>
+                  <text key={m} x={i * 120 + 10} y="88" fontSize="9" fill="#cbd5e1" fontWeight="600">{m}</text>
                 ))}
               </svg>
               {/* Mini legend */}
@@ -775,18 +775,18 @@ function AppMockup() {
             </div>
 
             {/* Recent transactions */}
-            <div style={{ background: "#0d1424", borderRadius: 12, padding: "14px 16px", border: "1px solid rgba(255,255,255,0.06)", overflow: "hidden" }}>
+            <div style={{ background: "#ffffff", borderRadius: 12, padding: "14px 16px", border: "1px solid rgba(15,23,42,0.08)", overflow: "hidden" }}>
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 10 }}>
-                <div style={{ fontSize: 11, fontWeight: 700, color: "#94a3b8" }}>Recente transacties</div>
+                <div style={{ fontSize: 11, fontWeight: 700, color: "#475569" }}>Recente transacties</div>
                 <div style={{ fontSize: 10, color: "#4f8ef7", cursor: "pointer" }}>Alles zien →</div>
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
                 {txs.map(tx => (
                   <div key={tx.name} style={{ display: "flex", alignItems: "center", gap: 10 }}>
-                    <div style={{ width: 30, height: 30, borderRadius: 8, background: "rgba(255,255,255,0.05)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 14, flexShrink: 0 }}>{tx.icon}</div>
+                    <div style={{ width: 30, height: 30, borderRadius: 8, background: "rgba(15,23,42,0.06)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 14, flexShrink: 0 }}>{tx.icon}</div>
                     <div style={{ flex: 1, minWidth: 0 }}>
                       <div style={{ fontSize: 11, fontWeight: 600, color: "#cbd5e1", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{tx.name}</div>
-                      <div style={{ fontSize: 10, color: "#334155" }}>{tx.cat}</div>
+                      <div style={{ fontSize: 10, color: "#cbd5e1" }}>{tx.cat}</div>
                     </div>
                     <div style={{ fontSize: 12, fontWeight: 700, color: tx.color, flexShrink: 0, fontVariantNumeric: "tabular-nums" }}>{tx.amount}</div>
                   </div>
@@ -805,7 +805,7 @@ function AppMockup() {
 const ASSET_CONFIG = [
   { key: "BTC",  name: "Bitcoin",  symbol: "BTC",  color: "#f59e0b", icon: "₿",  startPrice: 62847,  startChange:  2.34, holdings: "0.42 BTC" },
   { key: "ETH",  name: "Ethereum", symbol: "ETH",  color: "#6366f1", icon: "Ξ",  startPrice: 3421,   startChange:  1.87, holdings: "5.2 ETH"  },
-  { key: "AAPL", name: "Apple",    symbol: "AAPL", color: "#94a3b8", icon: "A",  startPrice: 189.45, startChange: -0.43, holdings: "85 aand." },
+  { key: "AAPL", name: "Apple",    symbol: "AAPL", color: "#475569", icon: "A",  startPrice: 189.45, startChange: -0.43, holdings: "85 aand." },
   { key: "GOLD", name: "Goud",     symbol: "XAU",  color: "#eab308", icon: "Au", startPrice: 2341,   startChange:  0.92, holdings: "12 oz"    },
 ];
 
@@ -870,13 +870,13 @@ function InvestmentMockup() {
   ];
 
   return (
-    <div style={{ borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.1)", boxShadow: "0 40px 120px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.05)", background: "#0a1020", maxWidth: 980, width: "100%" }}>
+    <div style={{ borderRadius: 16, overflow: "hidden", border: "1px solid rgba(15,23,42,0.1)", boxShadow: "0 40px 120px rgba(0,0,0,0.6), 0 0 0 1px rgba(15,23,42,0.06)", background: "#0a1020", maxWidth: 980, width: "100%" }}>
       {/* Browser chrome */}
-      <div style={{ height: 40, background: "#0d1526", borderBottom: "1px solid rgba(255,255,255,0.07)", display: "flex", alignItems: "center", padding: "0 16px", gap: 12 }}>
+      <div style={{ height: 40, background: "#0d1526", borderBottom: "1px solid rgba(15,23,42,0.08)", display: "flex", alignItems: "center", padding: "0 16px", gap: 12 }}>
         <div style={{ display: "flex", gap: 6 }}>
           {["#ff5f57","#febc2e","#28c840"].map(c => <div key={c} style={{ width: 11, height: 11, borderRadius: "50%", background: c, opacity: 0.85 }}/>)}
         </div>
-        <div style={{ flex: 1, height: 24, background: "rgba(255,255,255,0.05)", borderRadius: 6, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 11, color: "#475569", fontWeight: 500 }}>
+        <div style={{ flex: 1, height: 24, background: "rgba(15,23,42,0.06)", borderRadius: 6, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 11, color: "#475569", fontWeight: 500 }}>
           🔒 app.dynafy.nl/investeren
         </div>
       </div>
@@ -884,10 +884,10 @@ function InvestmentMockup() {
       {/* Layout */}
       <div style={{ display: "flex", height: 480 }}>
         {/* Sidebar */}
-        <div style={{ width: 188, background: "#070c1a", flexShrink: 0, borderRight: "1px solid rgba(255,255,255,0.05)", display: "flex", flexDirection: "column", padding: "16px 0" }}>
+        <div style={{ width: 188, background: "#070c1a", flexShrink: 0, borderRight: "1px solid rgba(15,23,42,0.06)", display: "flex", flexDirection: "column", padding: "16px 0" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 8, padding: "0 16px 20px" }}>
             <div style={{ width: 30, height: 30, borderRadius: 8, background: "#070c1a", border: "1px solid rgba(79,142,247,0.3)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 14 }}>〜</div>
-            <span style={{ fontWeight: 800, fontSize: 14, color: "#f1f5f9", letterSpacing: "-0.02em" }}>Dynafy</span>
+            <span style={{ fontWeight: 800, fontSize: 14, color: "#0f172a", letterSpacing: "-0.02em" }}>Dynafy</span>
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: 2, padding: "0 8px" }}>
             {navItems.map(n => (
@@ -899,11 +899,11 @@ function InvestmentMockup() {
         </div>
 
         {/* Main */}
-        <div style={{ flex: 1, background: "#080d18", padding: "20px", display: "flex", flexDirection: "column", gap: 14, overflow: "hidden" }}>
+        <div style={{ flex: 1, background: "#f5f7fb", padding: "20px", display: "flex", flexDirection: "column", gap: 14, overflow: "hidden" }}>
           {/* Header */}
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
             <div>
-              <div style={{ fontSize: 16, fontWeight: 800, color: "#f1f5f9", letterSpacing: "-0.02em" }}>Portfolio overzicht</div>
+              <div style={{ fontSize: 16, fontWeight: 800, color: "#0f172a", letterSpacing: "-0.02em" }}>Portfolio overzicht</div>
               <div style={{ display: "flex", alignItems: "center", gap: 6, marginTop: 4 }}>
                 <svg width="8" height="8"><circle cx="4" cy="4" r="4" fill="#22c55e" className="live-dot"/></svg>
                 <span style={{ fontSize: 11, color: "#475569" }}>Live koersen</span>
@@ -911,7 +911,7 @@ function InvestmentMockup() {
             </div>
             <div style={{ textAlign: "right" }}>
               <div style={{ fontSize: 10, color: "#475569", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.06em" }}>Totaalwaarde</div>
-              <div style={{ fontSize: 24, fontWeight: 800, letterSpacing: "-0.03em", color: totalFlash === "up" ? "#22c55e" : totalFlash === "down" ? "#f43f5e" : "#f1f5f9", transition: "color 0.2s", fontVariantNumeric: "tabular-nums" }}>
+              <div style={{ fontSize: 24, fontWeight: 800, letterSpacing: "-0.03em", color: totalFlash === "up" ? "#22c55e" : totalFlash === "down" ? "#f43f5e" : "#0f172a", transition: "color 0.2s", fontVariantNumeric: "tabular-nums" }}>
                 €{Math.round(totalValue).toLocaleString("nl-NL")}
               </div>
               <div style={{ fontSize: 11, color: "#22c55e", marginTop: 2 }}>↑ +€1.847 deze maand</div>
@@ -919,12 +919,12 @@ function InvestmentMockup() {
           </div>
 
           {/* Chart */}
-          <div style={{ background: "#0d1424", borderRadius: 12, padding: "14px 16px", border: "1px solid rgba(255,255,255,0.06)" }}>
+          <div style={{ background: "#ffffff", borderRadius: 12, padding: "14px 16px", border: "1px solid rgba(15,23,42,0.08)" }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 10 }}>
-              <div style={{ fontSize: 11, fontWeight: 700, color: "#94a3b8" }}>Portfolio waarde</div>
+              <div style={{ fontSize: 11, fontWeight: 700, color: "#475569" }}>Portfolio waarde</div>
               <div style={{ display: "flex", gap: 6 }}>
                 {["1D","1W","1M","1J"].map((t, i) => (
-                  <div key={t} style={{ fontSize: 10, padding: "3px 8px", borderRadius: 5, background: i === 2 ? "rgba(245,158,11,0.15)" : "transparent", color: i === 2 ? "#f59e0b" : "#334155", fontWeight: 600, cursor: "pointer" }}>{t}</div>
+                  <div key={t} style={{ fontSize: 10, padding: "3px 8px", borderRadius: 5, background: i === 2 ? "rgba(245,158,11,0.15)" : "transparent", color: i === 2 ? "#f59e0b" : "#cbd5e1", fontWeight: 600, cursor: "pointer" }}>{t}</div>
                 ))}
               </div>
             </div>
@@ -954,7 +954,7 @@ function InvestmentMockup() {
           {/* Asset cards */}
           <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 10 }}>
             {assets.map(a => (
-              <div key={a.key} style={{ background: "#0d1424", border: `1px solid ${a.flash === "up" ? "rgba(34,197,94,0.3)" : a.flash === "down" ? "rgba(244,63,94,0.25)" : "rgba(255,255,255,0.06)"}`, borderRadius: 12, padding: "12px 14px", transition: "border-color 0.3s" }}>
+              <div key={a.key} style={{ background: "#ffffff", border: `1px solid ${a.flash === "up" ? "rgba(34,197,94,0.3)" : a.flash === "down" ? "rgba(244,63,94,0.25)" : "rgba(15,23,42,0.08)"}`, borderRadius: 12, padding: "12px 14px", transition: "border-color 0.3s" }}>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
                   <div style={{ width: 28, height: 28, borderRadius: 8, background: `${a.color}18`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, fontWeight: 800, color: a.color }}>{a.icon}</div>
                   <div style={{ fontSize: 10, fontWeight: 700, color: a.change >= 0 ? "#22c55e" : "#f43f5e", background: a.change >= 0 ? "rgba(34,197,94,0.1)" : "rgba(244,63,94,0.1)", padding: "2px 6px", borderRadius: 4 }}>
@@ -962,10 +962,10 @@ function InvestmentMockup() {
                   </div>
                 </div>
                 <div style={{ fontSize: 10, color: "#475569", fontWeight: 600, marginBottom: 3 }}>{a.name}</div>
-                <div style={{ fontSize: 15, fontWeight: 800, color: a.flash === "up" ? "#22c55e" : a.flash === "down" ? "#f43f5e" : "#f1f5f9", transition: "color 0.25s", fontVariantNumeric: "tabular-nums", letterSpacing: "-0.02em" }}>
+                <div style={{ fontSize: 15, fontWeight: 800, color: a.flash === "up" ? "#22c55e" : a.flash === "down" ? "#f43f5e" : "#0f172a", transition: "color 0.25s", fontVariantNumeric: "tabular-nums", letterSpacing: "-0.02em" }}>
                   {a.key === "AAPL" ? `$${a.price.toFixed(2)}` : `€${Math.round(a.price).toLocaleString("nl-NL")}`}
                 </div>
-                <div style={{ fontSize: 10, color: "#334155", marginTop: 3 }}>{a.holdings}</div>
+                <div style={{ fontSize: 10, color: "#cbd5e1", marginTop: 3 }}>{a.holdings}</div>
               </div>
             ))}
           </div>
@@ -977,7 +977,7 @@ function InvestmentMockup() {
 
 // ── ZZP Mockup ─────────────────────────────────────────────────
 const ZZP_STATUSES = [
-  { key: "concept",   label: "Concept",   icon: "📝", color: "#94a3b8", bg: "rgba(148,163,184,0.12)" },
+  { key: "concept",   label: "Concept",   icon: "📝", color: "#475569", bg: "rgba(148,163,184,0.12)" },
   { key: "verstuurd", label: "Verstuurd", icon: "📤", color: "#4f8ef7", bg: "rgba(79,142,247,0.12)"  },
   { key: "betaald",   label: "Betaald",   icon: "✓",  color: "#22c55e", bg: "rgba(34,197,94,0.12)"   },
 ] as const;
@@ -1022,13 +1022,13 @@ function ZZPMockup() {
   ];
 
   return (
-    <div style={{ borderRadius:16, overflow:"hidden", border:"1px solid rgba(255,255,255,0.1)", boxShadow:"0 40px 120px rgba(0,0,0,0.6)", background:"#0a1020", maxWidth:980, width:"100%" }}>
+    <div style={{ borderRadius:16, overflow:"hidden", border:"1px solid rgba(15,23,42,0.1)", boxShadow:"0 40px 120px rgba(0,0,0,0.6)", background:"#0a1020", maxWidth:980, width:"100%" }}>
       {/* Browser chrome */}
-      <div style={{ height:40, background:"#0d1526", borderBottom:"1px solid rgba(255,255,255,0.07)", display:"flex", alignItems:"center", padding:"0 16px", gap:12 }}>
+      <div style={{ height:40, background:"#0d1526", borderBottom:"1px solid rgba(15,23,42,0.08)", display:"flex", alignItems:"center", padding:"0 16px", gap:12 }}>
         <div style={{ display:"flex", gap:6 }}>
           {["#ff5f57","#febc2e","#28c840"].map(c => <div key={c} style={{ width:11, height:11, borderRadius:"50%", background:c, opacity:0.85 }}/>)}
         </div>
-        <div style={{ flex:1, height:24, background:"rgba(255,255,255,0.05)", borderRadius:6, display:"flex", alignItems:"center", justifyContent:"center", fontSize:11, color:"#475569", fontWeight:500 }}>
+        <div style={{ flex:1, height:24, background:"rgba(15,23,42,0.06)", borderRadius:6, display:"flex", alignItems:"center", justifyContent:"center", fontSize:11, color:"#475569", fontWeight:500 }}>
           🔒 app.dynafy.nl/facturen/nieuw
         </div>
       </div>
@@ -1037,10 +1037,10 @@ function ZZPMockup() {
       <div style={{ display:"flex", height:480 }}>
 
         {/* Sidebar */}
-        <div style={{ width:188, background:"#070c1a", flexShrink:0, borderRight:"1px solid rgba(255,255,255,0.05)", display:"flex", flexDirection:"column", padding:"16px 0" }}>
+        <div style={{ width:188, background:"#070c1a", flexShrink:0, borderRight:"1px solid rgba(15,23,42,0.06)", display:"flex", flexDirection:"column", padding:"16px 0" }}>
           <div style={{ display:"flex", alignItems:"center", gap:8, padding:"0 16px 20px" }}>
             <div style={{ width:30, height:30, borderRadius:8, background:"#070c1a", border:"1px solid rgba(79,142,247,0.3)", display:"flex", alignItems:"center", justifyContent:"center", fontSize:14 }}>〜</div>
-            <span style={{ fontWeight:800, fontSize:14, color:"#f1f5f9", letterSpacing:"-0.02em" }}>Dynafy</span>
+            <span style={{ fontWeight:800, fontSize:14, color:"#0f172a", letterSpacing:"-0.02em" }}>Dynafy</span>
           </div>
           <div style={{ display:"flex", flexDirection:"column", gap:2, padding:"0 8px" }}>
             {navItems.map(n => (
@@ -1050,8 +1050,8 @@ function ZZPMockup() {
             ))}
           </div>
           {/* Sidebar stats */}
-          <div style={{ marginTop:"auto", padding:"12px 12px 0", borderTop:"1px solid rgba(255,255,255,0.05)" }}>
-            <div style={{ fontSize:10, color:"#334155", fontWeight:600, textTransform:"uppercase", letterSpacing:"0.08em", marginBottom:8 }}>Deze maand</div>
+          <div style={{ marginTop:"auto", padding:"12px 12px 0", borderTop:"1px solid rgba(15,23,42,0.06)" }}>
+            <div style={{ fontSize:10, color:"#cbd5e1", fontWeight:600, textTransform:"uppercase", letterSpacing:"0.08em", marginBottom:8 }}>Deze maand</div>
             {[["Omzet","€7.950","#22c55e"],["Facturen","4 stuks","#a855f7"],["Openstaand","€3.200","#f59e0b"]].map(([l,v,c]) => (
               <div key={l} style={{ display:"flex", justifyContent:"space-between", marginBottom:5 }}>
                 <span style={{ fontSize:11, color:"#475569" }}>{l}</span>
@@ -1065,12 +1065,12 @@ function ZZPMockup() {
         <div style={{ flex:1, display:"flex", overflow:"hidden" }}>
 
           {/* Form panel */}
-          <div style={{ flex:1, background:"#080d18", padding:"18px 20px", display:"flex", flexDirection:"column", gap:12, borderRight:"1px solid rgba(255,255,255,0.05)", overflow:"hidden" }}>
+          <div style={{ flex:1, background:"#f5f7fb", padding:"18px 20px", display:"flex", flexDirection:"column", gap:12, borderRight:"1px solid rgba(15,23,42,0.06)", overflow:"hidden" }}>
 
             {/* Header */}
             <div style={{ display:"flex", justifyContent:"space-between", alignItems:"flex-start" }}>
               <div>
-                <div style={{ fontSize:15, fontWeight:800, color:"#f1f5f9" }}>Factuur #1043</div>
+                <div style={{ fontSize:15, fontWeight:800, color:"#0f172a" }}>Factuur #1043</div>
                 <div style={{ marginTop:6 }}>
                   <span style={{ padding:"3px 10px", borderRadius:20, background:fading ? "transparent" : st.bg, color:fading ? "transparent" : st.color, fontSize:11, fontWeight:700, transition:"all 0.25s" }}>
                     {st.icon} {st.label}
@@ -1085,7 +1085,7 @@ function ZZPMockup() {
             {/* Klant */}
             <div>
               <div style={{ fontSize:10, color:"#475569", fontWeight:600, textTransform:"uppercase", letterSpacing:"0.06em", marginBottom:5 }}>Klant</div>
-              <div style={{ background:"#0d1424", border:"1px solid rgba(168,85,247,0.2)", borderRadius:8, padding:"8px 12px", fontSize:12, color:"#f1f5f9", fontWeight:600 }}>Webdesign Studio BV</div>
+              <div style={{ background:"#ffffff", border:"1px solid rgba(168,85,247,0.2)", borderRadius:8, padding:"8px 12px", fontSize:12, color:"#0f172a", fontWeight:600 }}>Webdesign Studio BV</div>
             </div>
 
             {/* Dates */}
@@ -1093,7 +1093,7 @@ function ZZPMockup() {
               {[["Factuurdatum","12 april 2025"],["Vervaldatum","26 april 2025"]].map(([l,v]) => (
                 <div key={l}>
                   <div style={{ fontSize:10, color:"#475569", fontWeight:600, textTransform:"uppercase", letterSpacing:"0.06em", marginBottom:5 }}>{l}</div>
-                  <div style={{ background:"#0d1424", border:"1px solid rgba(255,255,255,0.06)", borderRadius:8, padding:"8px 12px", fontSize:12, color:"#94a3b8" }}>{v}</div>
+                  <div style={{ background:"#ffffff", border:"1px solid rgba(15,23,42,0.08)", borderRadius:8, padding:"8px 12px", fontSize:12, color:"#475569" }}>{v}</div>
                 </div>
               ))}
             </div>
@@ -1103,32 +1103,32 @@ function ZZPMockup() {
               <div style={{ fontSize:10, color:"#475569", fontWeight:600, textTransform:"uppercase", letterSpacing:"0.06em", marginBottom:6 }}>Regels</div>
               <div style={{ display:"flex", flexDirection:"column", gap:5 }}>
                 {lineItems.map(item => (
-                  <div key={item.desc} style={{ display:"flex", alignItems:"center", gap:8, background:"#0d1424", border:"1px solid rgba(255,255,255,0.06)", borderRadius:8, padding:"7px 12px" }}>
+                  <div key={item.desc} style={{ display:"flex", alignItems:"center", gap:8, background:"#ffffff", border:"1px solid rgba(15,23,42,0.08)", borderRadius:8, padding:"7px 12px" }}>
                     <span style={{ flex:1, fontSize:11, color:"#cbd5e1" }}>{item.desc}</span>
-                    <span style={{ fontSize:12, fontWeight:700, color:"#f1f5f9", fontVariantNumeric:"tabular-nums" }}>{item.amt}</span>
+                    <span style={{ fontSize:12, fontWeight:700, color:"#0f172a", fontVariantNumeric:"tabular-nums" }}>{item.amt}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Totals */}
-            <div style={{ borderTop:"1px solid rgba(255,255,255,0.06)", paddingTop:10 }}>
+            <div style={{ borderTop:"1px solid rgba(15,23,42,0.08)", paddingTop:10 }}>
               {[["Subtotaal","€2.400,00",false],["BTW (21%)","€504,00",false],["Totaal","€2.904,00",true]].map(([l,v,bold]) => (
                 <div key={l as string} style={{ display:"flex", justifyContent:"space-between", marginBottom:4 }}>
-                  <span style={{ fontSize:bold ? 13 : 11, color:bold ? "#f1f5f9" : "#475569", fontWeight:bold ? 700 : 500 }}>{l}</span>
-                  <span style={{ fontSize:bold ? 14 : 12, color:bold ? "#f1f5f9" : "#64748b", fontWeight:700, fontVariantNumeric:"tabular-nums" }}>{v}</span>
+                  <span style={{ fontSize:bold ? 13 : 11, color:bold ? "#0f172a" : "#475569", fontWeight:bold ? 700 : 500 }}>{l}</span>
+                  <span style={{ fontSize:bold ? 14 : 12, color:bold ? "#0f172a" : "#64748b", fontWeight:700, fontVariantNumeric:"tabular-nums" }}>{v}</span>
                 </div>
               ))}
             </div>
 
             {/* Recent invoices */}
-            <div style={{ marginTop:"auto", borderTop:"1px solid rgba(255,255,255,0.05)", paddingTop:10 }}>
-              <div style={{ fontSize:10, color:"#334155", fontWeight:600, textTransform:"uppercase", letterSpacing:"0.08em", marginBottom:7 }}>Recente facturen</div>
+            <div style={{ marginTop:"auto", borderTop:"1px solid rgba(15,23,42,0.06)", paddingTop:10 }}>
+              <div style={{ fontSize:10, color:"#cbd5e1", fontWeight:600, textTransform:"uppercase", letterSpacing:"0.08em", marginBottom:7 }}>Recente facturen</div>
               {recentInvoices.map(inv => (
                 <div key={inv.num} style={{ display:"flex", alignItems:"center", gap:8, marginBottom:5 }}>
-                  <span style={{ fontSize:11, color:"#334155", fontWeight:600, width:36 }}>{inv.num}</span>
+                  <span style={{ fontSize:11, color:"#cbd5e1", fontWeight:600, width:36 }}>{inv.num}</span>
                   <span style={{ flex:1, fontSize:11, color:"#475569" }}>{inv.client}</span>
-                  <span style={{ fontSize:11, fontWeight:700, color:"#94a3b8", fontVariantNumeric:"tabular-nums" }}>{inv.amt}</span>
+                  <span style={{ fontSize:11, fontWeight:700, color:"#475569", fontVariantNumeric:"tabular-nums" }}>{inv.amt}</span>
                   <span style={{ fontSize:10, color:inv.color, fontWeight:600 }}>✓</span>
                 </div>
               ))}
@@ -1140,11 +1140,11 @@ function ZZPMockup() {
             {/* Header */}
             <div style={{ display:"flex", justifyContent:"space-between", alignItems:"flex-start" }}>
               <div>
-                <div style={{ fontSize:11, fontWeight:800, color:"#0f172a" }}>Dynafy</div>
-                <div style={{ fontSize:8, color:"#94a3b8" }}>app.dynafy.nl</div>
+                <div style={{ fontSize:11, fontWeight:800, color:"#f1f5f9" }}>Dynafy</div>
+                <div style={{ fontSize:8, color:"#475569" }}>app.dynafy.nl</div>
               </div>
               <div style={{ textAlign:"right" }}>
-                <div style={{ fontSize:13, fontWeight:800, color:"#0f172a" }}>FACTUUR</div>
+                <div style={{ fontSize:13, fontWeight:800, color:"#f1f5f9" }}>FACTUUR</div>
                 <div style={{ fontSize:9, color:"#64748b" }}>#1043</div>
               </div>
             </div>
@@ -1154,9 +1154,9 @@ function ZZPMockup() {
             <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:10 }}>
               {[["VAN","Jan de Vries","jan@dynafy.nl"],["AAN","Webdesign Studio BV","info@ws.nl"]].map(([l,n,s]) => (
                 <div key={l}>
-                  <div style={{ fontSize:7, color:"#94a3b8", fontWeight:700, textTransform:"uppercase", letterSpacing:"0.08em", marginBottom:3 }}>{l}</div>
-                  <div style={{ fontSize:9, fontWeight:700, color:"#0f172a" }}>{n}</div>
-                  <div style={{ fontSize:8, color:"#94a3b8" }}>{s}</div>
+                  <div style={{ fontSize:7, color:"#475569", fontWeight:700, textTransform:"uppercase", letterSpacing:"0.08em", marginBottom:3 }}>{l}</div>
+                  <div style={{ fontSize:9, fontWeight:700, color:"#f1f5f9" }}>{n}</div>
+                  <div style={{ fontSize:8, color:"#475569" }}>{s}</div>
                 </div>
               ))}
             </div>
@@ -1165,8 +1165,8 @@ function ZZPMockup() {
             <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:10 }}>
               {[["Datum","12 apr 2025"],["Vervalt","26 apr 2025"]].map(([l,v]) => (
                 <div key={l}>
-                  <div style={{ fontSize:7, color:"#94a3b8", fontWeight:700, textTransform:"uppercase", letterSpacing:"0.08em" }}>{l}</div>
-                  <div style={{ fontSize:9, color:"#334155", fontWeight:600 }}>{v}</div>
+                  <div style={{ fontSize:7, color:"#475569", fontWeight:700, textTransform:"uppercase", letterSpacing:"0.08em" }}>{l}</div>
+                  <div style={{ fontSize:9, color:"#cbd5e1", fontWeight:600 }}>{v}</div>
                 </div>
               ))}
             </div>
@@ -1174,12 +1174,12 @@ function ZZPMockup() {
             {/* Line items */}
             <div>
               <div style={{ display:"flex", justifyContent:"space-between", borderBottom:"1px solid #e2e8f0", paddingBottom:5, marginBottom:6 }}>
-                {["Omschrijving","Bedrag"].map(h => <span key={h} style={{ fontSize:7, color:"#94a3b8", fontWeight:700, textTransform:"uppercase" }}>{h}</span>)}
+                {["Omschrijving","Bedrag"].map(h => <span key={h} style={{ fontSize:7, color:"#475569", fontWeight:700, textTransform:"uppercase" }}>{h}</span>)}
               </div>
               {lineItems.map(item => (
                 <div key={item.desc} style={{ display:"flex", justifyContent:"space-between", marginBottom:5 }}>
-                  <span style={{ fontSize:9, color:"#334155" }}>{item.desc}</span>
-                  <span style={{ fontSize:9, color:"#334155", fontWeight:600 }}>{item.amt}</span>
+                  <span style={{ fontSize:9, color:"#cbd5e1" }}>{item.desc}</span>
+                  <span style={{ fontSize:9, color:"#cbd5e1", fontWeight:600 }}>{item.amt}</span>
                 </div>
               ))}
             </div>
@@ -1188,8 +1188,8 @@ function ZZPMockup() {
             <div style={{ borderTop:"1px solid #e2e8f0", paddingTop:8, marginTop:"auto" }}>
               {[["Subtotaal","€2.400,00",false],["BTW 21%","€504,00",false],["Totaal","€2.904,00",true]].map(([l,v,bold]) => (
                 <div key={l as string} style={{ display:"flex", justifyContent:"space-between", marginBottom:4 }}>
-                  <span style={{ fontSize:bold ? 10 : 8, color:bold ? "#0f172a" : "#64748b", fontWeight:bold ? 800 : 500 }}>{l}</span>
-                  <span style={{ fontSize:bold ? 10 : 8, color:bold ? "#0f172a" : "#64748b", fontWeight:bold ? 800 : 500 }}>{v}</span>
+                  <span style={{ fontSize:bold ? 10 : 8, color:bold ? "#f1f5f9" : "#64748b", fontWeight:bold ? 800 : 500 }}>{l}</span>
+                  <span style={{ fontSize:bold ? 10 : 8, color:bold ? "#f1f5f9" : "#64748b", fontWeight:bold ? 800 : 500 }}>{v}</span>
                 </div>
               ))}
             </div>
@@ -1233,8 +1233,8 @@ function FaqItem({ q, a }: { q: string; a: string }) {
     <div
       onClick={() => setOpen(!open)}
       style={{
-        background: "#0d1424",
-        border: `1px solid ${open ? "rgba(79,142,247,0.3)" : "rgba(255,255,255,0.07)"}`,
+        background: "#ffffff",
+        border: `1px solid ${open ? "rgba(79,142,247,0.3)" : "rgba(15,23,42,0.08)"}`,
         borderRadius: 14,
         padding: "20px 24px",
         cursor: "pointer",
@@ -1242,17 +1242,17 @@ function FaqItem({ q, a }: { q: string; a: string }) {
       }}
     >
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 16 }}>
-        <span style={{ fontSize: 15, fontWeight: 600, color: "#f1f5f9" }}>{q}</span>
+        <span style={{ fontSize: 15, fontWeight: 600, color: "#0f172a" }}>{q}</span>
         <span style={{
-          width: 28, height: 28, borderRadius: 8, background: open ? "rgba(79,142,247,0.15)" : "rgba(255,255,255,0.05)",
-          border: `1px solid ${open ? "rgba(79,142,247,0.3)" : "rgba(255,255,255,0.1)"}`,
+          width: 28, height: 28, borderRadius: 8, background: open ? "rgba(79,142,247,0.15)" : "rgba(15,23,42,0.06)",
+          border: `1px solid ${open ? "rgba(79,142,247,0.3)" : "rgba(15,23,42,0.1)"}`,
           display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0,
           color: open ? "#4f8ef7" : "#64748b", fontSize: 18, lineHeight: 1,
           transition: "all 0.2s", transform: open ? "rotate(45deg)" : "none",
         }}>+</span>
       </div>
       {open && (
-        <p style={{ marginTop: 14, fontSize: 14, lineHeight: 1.75, color: "#94a3b8" }}>{a}</p>
+        <p style={{ marginTop: 14, fontSize: 14, lineHeight: 1.75, color: "#475569" }}>{a}</p>
       )}
     </div>
   );
@@ -1273,20 +1273,20 @@ export default function Home() {
   const STEPS       = lang === 'en' ? STEPS_EN       : STEPS_NL;
 
   return (
-    <div style={{ minHeight: "100vh", background: "#080d18" }}>
+    <div style={{ minHeight: "100vh", background: "#f5f7fb" }}>
 
       {/* ── NAV ── */}
       <nav style={{
         position: "fixed", top: 0, left: 0, right: 0, zIndex: 100,
         height: 64, padding: "0 40px",
         display: "flex", alignItems: "center", justifyContent: "space-between",
-        background: "rgba(8,13,24,0.88)", backdropFilter: "blur(16px)",
-        borderBottom: "1px solid rgba(255,255,255,0.06)",
+        background: "rgba(255,255,255,0.9)", backdropFilter: "blur(16px)",
+        borderBottom: "1px solid rgba(15,23,42,0.08)",
       }}>
         {/* Logo */}
         <a href="#" style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none" }}>
           <DynafyLogo size={36} />
-          <span style={{ fontWeight: 800, fontSize: 18, color: "#f1f5f9", letterSpacing: "-0.02em" }}>Dynafy</span>
+          <span style={{ fontWeight: 800, fontSize: 18, color: "#0f172a", letterSpacing: "-0.02em" }}>Dynafy</span>
         </a>
 
         {/* Links */}
@@ -1294,7 +1294,7 @@ export default function Home() {
           {t.navLinks.map((l, i) => (
             <a key={l} href={t.navHrefs[i]}
               style={{ fontSize: 14, fontWeight: 500, color: "#64748b", textDecoration: "none", transition: "color 0.15s" }}
-              onMouseEnter={e => (e.currentTarget.style.color = "#f1f5f9")}
+              onMouseEnter={e => (e.currentTarget.style.color = "#0f172a")}
               onMouseLeave={e => (e.currentTarget.style.color = "#64748b")}>
               {l}
             </a>
@@ -1304,7 +1304,7 @@ export default function Home() {
         {/* CTA */}
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           {/* Language switcher */}
-          <div style={{ display: "flex", gap: 4, background: "rgba(255,255,255,0.05)", borderRadius: 8, padding: 3 }}>
+          <div style={{ display: "flex", gap: 4, background: "rgba(15,23,42,0.06)", borderRadius: 8, padding: 3 }}>
             {(['nl', 'en'] as const).map(l => (
               <button key={l} onClick={() => setLang(l)} style={{
                 padding: "4px 10px", borderRadius: 6, border: "none", cursor: "pointer", fontSize: 12, fontWeight: 700,
@@ -1353,7 +1353,7 @@ export default function Home() {
           </div>
 
           {/* Headline */}
-          <h1 className="anim-2" style={{ fontSize: "clamp(38px, 6vw, 68px)", fontWeight: 800, lineHeight: 1.1, letterSpacing: "-0.03em", marginBottom: 24, color: "#f1f5f9" }}>
+          <h1 className="anim-2" style={{ fontSize: "clamp(38px, 6vw, 68px)", fontWeight: 800, lineHeight: 1.1, letterSpacing: "-0.03em", marginBottom: 24, color: "#0f172a" }}>
             {t.h1a}{" "}
             <span className="gradient-text">{t.h1b}</span>
             <br />{t.h1c}
@@ -1375,7 +1375,7 @@ export default function Home() {
           </div>
 
           {/* Trust line */}
-          <p className="anim-5" style={{ fontSize: 13, color: "#334155" }}>
+          <p className="anim-5" style={{ fontSize: 13, color: "#cbd5e1" }}>
             {t.trustLine}
           </p>
         </div>
@@ -1407,7 +1407,7 @@ export default function Home() {
       </section>
 
       {/* ── SOCIAL PROOF BAR ── */}
-      <div style={{ borderTop: "1px solid rgba(255,255,255,0.06)", borderBottom: "1px solid rgba(255,255,255,0.06)", padding: "28px 40px", background: "rgba(13,20,36,0.6)" }}>
+      <div style={{ borderTop: "1px solid rgba(15,23,42,0.08)", borderBottom: "1px solid rgba(15,23,42,0.08)", padding: "28px 40px", background: "rgba(239,243,249,0.8)" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "center", gap: "clamp(24px, 5vw, 80px)", flexWrap: "wrap" }}>
           {[
             { val: "500+", label: t.stat1Label },
@@ -1433,7 +1433,7 @@ export default function Home() {
           {/* Left */}
           <div>
             <div style={{ fontSize: 13, fontWeight: 700, color: "#a855f7", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>{t.zzpLabel}</div>
-            <h2 style={{ fontSize: "clamp(26px, 3.5vw, 40px)", fontWeight: 800, letterSpacing: "-0.02em", color: "#f1f5f9", marginBottom: 16, lineHeight: 1.15 }}>
+            <h2 style={{ fontSize: "clamp(26px, 3.5vw, 40px)", fontWeight: 800, letterSpacing: "-0.02em", color: "#0f172a", marginBottom: 16, lineHeight: 1.15 }}>
               {t.zzpH2a}{" "}
               <span style={{ background: "linear-gradient(135deg, #a855f7, #4f8ef7)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>{t.zzpH2b}</span>
               <br />{t.zzpH2c}
@@ -1449,11 +1449,11 @@ export default function Home() {
           {/* Right — feature grid */}
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
             {ZZP_FEATURES.map(f => (
-              <div key={f.title} style={{ background: "#0d1424", border: "1px solid rgba(168,85,247,0.12)", borderRadius: 14, padding: "18px 20px", transition: "border-color 0.2s" }}
+              <div key={f.title} style={{ background: "#ffffff", border: "1px solid rgba(168,85,247,0.12)", borderRadius: 14, padding: "18px 20px", transition: "border-color 0.2s" }}
                 onMouseEnter={e => (e.currentTarget.style.borderColor = "rgba(168,85,247,0.3)")}
                 onMouseLeave={e => (e.currentTarget.style.borderColor = "rgba(168,85,247,0.12)")}>
                 <div style={{ fontSize: 22, marginBottom: 8 }}>{f.icon}</div>
-                <div style={{ fontSize: 13, fontWeight: 700, color: "#f1f5f9", marginBottom: 4 }}>{f.title}</div>
+                <div style={{ fontSize: 13, fontWeight: 700, color: "#0f172a", marginBottom: 4 }}>{f.title}</div>
                 <div style={{ fontSize: 12, color: "#64748b", lineHeight: 1.6 }}>{f.desc}</div>
               </div>
             ))}
@@ -1467,7 +1467,7 @@ export default function Home() {
         <div style={{ maxWidth:1000, margin:"0 auto", position:"relative", zIndex:1 }}>
           <div style={{ textAlign:"center", marginBottom:48 }}>
             <div style={{ fontSize:13, fontWeight:700, color:"#a855f7", textTransform:"uppercase", letterSpacing:"0.1em", marginBottom:12 }}>{t.zzpMockupLabel}</div>
-            <h2 style={{ fontSize:"clamp(26px, 3.5vw, 40px)", fontWeight:800, color:"#f1f5f9", letterSpacing:"-0.02em", marginBottom:14 }}>
+            <h2 style={{ fontSize:"clamp(26px, 3.5vw, 40px)", fontWeight:800, color:"#0f172a", letterSpacing:"-0.02em", marginBottom:14 }}>
               {t.zzpMockupH2}
             </h2>
             <p style={{ fontSize:15, color:"#64748b", maxWidth:460, margin:"0 auto" }}>
@@ -1481,11 +1481,11 @@ export default function Home() {
       </section>
 
       {/* ── PRICING ── */}
-      <section id="prijzen" style={{ padding: "100px 40px", background: "rgba(13,20,36,0.4)", borderTop: "1px solid rgba(255,255,255,0.05)" }}>
+      <section id="prijzen" style={{ padding: "100px 40px", background: "rgba(239,243,249,0.6)", borderTop: "1px solid rgba(15,23,42,0.06)" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: 64 }}>
             <div style={{ fontSize: 13, fontWeight: 700, color: "#f59e0b", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>{t.pricingLabel}</div>
-            <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, letterSpacing: "-0.02em", color: "#f1f5f9", marginBottom: 16 }}>
+            <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, letterSpacing: "-0.02em", color: "#0f172a", marginBottom: 16 }}>
               {t.pricingH2}
             </h2>
             <p style={{ fontSize: 15, color: "#64748b" }}>{t.pricingSub}</p>
@@ -1494,8 +1494,8 @@ export default function Home() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 20 }}>
             {PLANS.map(plan => (
               <div key={plan.name} style={{
-                background: plan.featured ? "linear-gradient(135deg, rgba(168,85,247,0.08), rgba(79,142,247,0.04))" : "#0d1424",
-                border: `1px solid ${plan.featured ? "rgba(168,85,247,0.4)" : plan.name === "Premium" ? "rgba(79,142,247,0.3)" : "rgba(255,255,255,0.07)"}`,
+                background: plan.featured ? "linear-gradient(135deg, rgba(168,85,247,0.08), rgba(79,142,247,0.04))" : "#ffffff",
+                border: `1px solid ${plan.featured ? "rgba(168,85,247,0.4)" : plan.name === "Premium" ? "rgba(79,142,247,0.3)" : "rgba(15,23,42,0.08)"}`,
                 borderRadius: 20,
                 padding: 28,
                 display: "flex",
@@ -1521,15 +1521,15 @@ export default function Home() {
 
                 <div>
                   <div style={{ display: "flex", alignItems: "baseline", gap: 4 }}>
-                    <span style={{ fontSize: 38, fontWeight: 800, color: "#f1f5f9", letterSpacing: "-0.03em", fontFamily: "monospace" }}>{plan.price}</span>
+                    <span style={{ fontSize: 38, fontWeight: 800, color: "#0f172a", letterSpacing: "-0.03em", fontFamily: "monospace" }}>{plan.price}</span>
                     <span style={{ fontSize: 14, color: "#475569" }}>{plan.per}</span>
                   </div>
-                  {"yearly" in plan && plan.yearly && <div style={{ fontSize: 11, color: "#334155", marginTop: 4 }}>{plan.yearly}</div>}
+                  {"yearly" in plan && plan.yearly && <div style={{ fontSize: 11, color: "#cbd5e1", marginTop: 4 }}>{plan.yearly}</div>}
                 </div>
 
                 <div style={{ display: "flex", flexDirection: "column", gap: 9, flex: 1 }}>
                   {plan.features.map(f => (
-                    <div key={f} style={{ display: "flex", alignItems: "flex-start", gap: 8, fontSize: 13, color: "#94a3b8" }}>
+                    <div key={f} style={{ display: "flex", alignItems: "flex-start", gap: 8, fontSize: 13, color: "#475569" }}>
                       <span style={{ color: plan.color, marginTop: 1, flexShrink: 0 }}><Check /></span>
                       {f}
                     </div>
@@ -1542,8 +1542,8 @@ export default function Home() {
                   background: plan.ctaStyle === "purple" ? "linear-gradient(135deg, #a855f7, #6366f1)"
                     : plan.ctaStyle === "blue" ? "linear-gradient(135deg, #4f8ef7, #6366f1)"
                     : plan.ctaStyle === "amber" ? "linear-gradient(135deg, #f59e0b, #f97316)"
-                    : "rgba(255,255,255,0.06)",
-                  border: plan.ctaStyle === "ghost" ? "1px solid rgba(255,255,255,0.1)" : "none",
+                    : "rgba(15,23,42,0.08)",
+                  border: plan.ctaStyle === "ghost" ? "1px solid rgba(15,23,42,0.1)" : "none",
                   color: plan.ctaStyle === "ghost" ? "#64748b" : "#fff",
                   fontSize: 13, fontWeight: 700, textDecoration: "none", cursor: "pointer",
                   boxShadow: plan.featured ? "0 4px 20px rgba(168,85,247,0.3)" : "none",
@@ -1560,11 +1560,11 @@ export default function Home() {
       </section>
 
       {/* ── HOW IT WORKS (verplaatst na pricing) ── */}
-      <section style={{ padding: "80px 40px", background: "rgba(13,20,36,0.5)", borderTop: "1px solid rgba(255,255,255,0.05)", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
+      <section style={{ padding: "80px 40px", background: "rgba(239,243,249,0.7)", borderTop: "1px solid rgba(15,23,42,0.06)", borderBottom: "1px solid rgba(15,23,42,0.06)" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: 64 }}>
             <div style={{ fontSize: 13, fontWeight: 700, color: "#22c55e", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>{t.howLabel}</div>
-            <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, letterSpacing: "-0.02em", color: "#f1f5f9" }}>
+            <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, letterSpacing: "-0.02em", color: "#0f172a" }}>
               {t.howH2}
             </h2>
           </div>
@@ -1575,7 +1575,7 @@ export default function Home() {
                 <div style={{ width: 64, height: 64, borderRadius: 18, background: `${s.color}14`, border: `1px solid ${s.color}30`, display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px", fontSize: 22, fontWeight: 800, color: s.color, fontFamily: "monospace" }}>
                   {s.num}
                 </div>
-                <h3 style={{ fontSize: 17, fontWeight: 700, color: "#f1f5f9", marginBottom: 10 }}>{s.title}</h3>
+                <h3 style={{ fontSize: 17, fontWeight: 700, color: "#0f172a", marginBottom: 10 }}>{s.title}</h3>
                 <p style={{ fontSize: 14, lineHeight: 1.7, color: "#64748b" }}>{s.desc}</p>
                 {i < STEPS.length - 1 && (
                   <div className="hide-mobile" style={{ position: "absolute", top: 30, right: -16, fontSize: 20, color: "#1e293b" }}>→</div>
@@ -1590,7 +1590,7 @@ export default function Home() {
       <section id="functies" style={{ padding: "100px 40px", maxWidth: 1200, margin: "0 auto" }}>
         <div style={{ textAlign: "center", marginBottom: 64 }}>
           <div style={{ fontSize: 13, fontWeight: 700, color: "#4f8ef7", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>{t.featuresLabel}</div>
-          <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, letterSpacing: "-0.02em", color: "#f1f5f9", marginBottom: 16 }}>
+          <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, letterSpacing: "-0.02em", color: "#0f172a", marginBottom: 16 }}>
             {t.featuresH2a}<br />{t.featuresH2b}
           </h2>
           <p style={{ fontSize: 16, color: "#64748b", maxWidth: 480, margin: "0 auto" }}>
@@ -1604,7 +1604,7 @@ export default function Home() {
               <div style={{ width: 48, height: 48, borderRadius: 13, background: `${f.color}18`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 22, marginBottom: 18 }}>
                 {f.icon}
               </div>
-              <h3 style={{ fontSize: 16, fontWeight: 700, color: "#f1f5f9", marginBottom: 8 }}>{f.title}</h3>
+              <h3 style={{ fontSize: 16, fontWeight: 700, color: "#0f172a", marginBottom: 8 }}>{f.title}</h3>
               <p style={{ fontSize: 14, lineHeight: 1.7, color: "#64748b" }}>{f.desc}</p>
             </div>
           ))}
@@ -1612,12 +1612,12 @@ export default function Home() {
       </section>
 
       {/* ── INVESTMENT SHOWCASE (verplaatst na privé-features) ── */}
-      <section style={{ padding: "100px 40px", background: "rgba(13,20,36,0.5)", borderTop: "1px solid rgba(255,255,255,0.05)", borderBottom: "1px solid rgba(255,255,255,0.05)", position: "relative", overflow: "hidden" }}>
+      <section style={{ padding: "100px 40px", background: "rgba(239,243,249,0.7)", borderTop: "1px solid rgba(15,23,42,0.06)", borderBottom: "1px solid rgba(15,23,42,0.06)", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: 700, height: 400, borderRadius: "50%", background: "radial-gradient(ellipse, rgba(245,158,11,0.07) 0%, transparent 70%)", pointerEvents: "none" }}/>
         <div style={{ maxWidth: 1000, margin: "0 auto", position: "relative", zIndex: 1 }}>
           <div style={{ textAlign: "center", marginBottom: 48 }}>
             <div style={{ fontSize: 13, fontWeight: 700, color: "#f59e0b", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>{t.investLabel}</div>
-            <h2 style={{ fontSize: "clamp(26px, 3.5vw, 40px)", fontWeight: 800, color: "#f1f5f9", letterSpacing: "-0.02em", marginBottom: 14 }}>
+            <h2 style={{ fontSize: "clamp(26px, 3.5vw, 40px)", fontWeight: 800, color: "#0f172a", letterSpacing: "-0.02em", marginBottom: 14 }}>
               {t.investH2}
             </h2>
             <p style={{ fontSize: 15, color: "#64748b", maxWidth: 460, margin: "0 auto" }}>
@@ -1634,7 +1634,7 @@ export default function Home() {
       <section style={{ padding: "100px 40px", maxWidth: 1200, margin: "0 auto" }}>
         <div style={{ textAlign: "center", marginBottom: 64 }}>
           <div style={{ fontSize: 13, fontWeight: 700, color: "#22c55e", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>{t.testimonialsLabel}</div>
-          <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, letterSpacing: "-0.02em", color: "#f1f5f9" }}>
+          <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, letterSpacing: "-0.02em", color: "#0f172a" }}>
             {t.testimonialsH2}
           </h2>
         </div>
@@ -1643,13 +1643,13 @@ export default function Home() {
           {TESTIMONIALS.map(t => (
             <div key={t.name} className="card" style={{ padding: 28, display: "flex", flexDirection: "column", gap: 20 }}>
               <Stars n={t.stars} />
-              <p style={{ fontSize: 14, lineHeight: 1.8, color: "#94a3b8", flex: 1 }}>&ldquo;{t.quote}&rdquo;</p>
+              <p style={{ fontSize: 14, lineHeight: 1.8, color: "#475569", flex: 1 }}>&ldquo;{t.quote}&rdquo;</p>
               <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
                 <div style={{ width: 40, height: 40, borderRadius: 12, background: `${t.color}20`, border: `1px solid ${t.color}30`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13, fontWeight: 700, color: t.color, flexShrink: 0 }}>
                   {t.avatar}
                 </div>
                 <div>
-                  <div style={{ fontSize: 13, fontWeight: 700, color: "#f1f5f9" }}>{t.name}</div>
+                  <div style={{ fontSize: 13, fontWeight: 700, color: "#0f172a" }}>{t.name}</div>
                   <div style={{ fontSize: 12, color: "#475569" }}>{t.role}</div>
                 </div>
               </div>
@@ -1659,11 +1659,11 @@ export default function Home() {
       </section>
 
       {/* ── FAQ ── */}
-      <section id="faq" style={{ padding: "80px 40px", background: "rgba(13,20,36,0.4)", borderTop: "1px solid rgba(255,255,255,0.05)" }}>
+      <section id="faq" style={{ padding: "80px 40px", background: "rgba(239,243,249,0.6)", borderTop: "1px solid rgba(15,23,42,0.06)" }}>
         <div style={{ maxWidth: 720, margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: 56 }}>
             <div style={{ fontSize: 13, fontWeight: 700, color: "#4f8ef7", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>{t.faqLabel}</div>
-            <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.02em", color: "#f1f5f9" }}>
+            <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.02em", color: "#0f172a" }}>
               {t.faqH2}
             </h2>
           </div>
@@ -1678,7 +1678,7 @@ export default function Home() {
       <section style={{ padding: "100px 40px", textAlign: "center", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: 600, height: 300, borderRadius: "50%", background: "radial-gradient(ellipse, rgba(79,142,247,0.1) 0%, transparent 70%)", pointerEvents: "none" }}/>
         <div style={{ maxWidth: 600, margin: "0 auto", position: "relative" }}>
-          <h2 style={{ fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 800, letterSpacing: "-0.02em", color: "#f1f5f9", marginBottom: 20, lineHeight: 1.15 }}>
+          <h2 style={{ fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 800, letterSpacing: "-0.02em", color: "#0f172a", marginBottom: 20, lineHeight: 1.15 }}>
             {t.finalH2a}<br />{t.finalH2b}{" "}
             <span className="gradient-text">{t.finalH2c}</span>
           </h2>
@@ -1688,19 +1688,19 @@ export default function Home() {
           <a href="https://app.dynafy.nl?mode=register" className="btn-cta" style={{ fontSize: 17, padding: "17px 36px" }}>
             {t.finalCta} <Arrow />
           </a>
-          <p style={{ marginTop: 20, fontSize: 13, color: "#334155" }}>
+          <p style={{ marginTop: 20, fontSize: 13, color: "#cbd5e1" }}>
             {t.finalSocial}
           </p>
         </div>
       </section>
 
       {/* ── FOOTER ── */}
-      <footer style={{ borderTop: "1px solid rgba(255,255,255,0.06)", padding: "40px 40px", background: "#060b14" }}>
+      <footer style={{ borderTop: "1px solid rgba(15,23,42,0.08)", padding: "40px 40px", background: "#060b14" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 20 }}>
           {/* Logo */}
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
             <DynafyLogo size={30} />
-            <span style={{ fontWeight: 700, fontSize: 15, color: "#94a3b8" }}>Dynafy</span>
+            <span style={{ fontWeight: 700, fontSize: 15, color: "#475569" }}>Dynafy</span>
           </div>
 
           {/* Links */}
@@ -1709,9 +1709,9 @@ export default function Home() {
               <a key={l} href={t.footerLinksHrefs[i]}
                 target={t.footerLinksHrefs[i].startsWith("http") ? "_blank" : undefined}
                 rel={t.footerLinksHrefs[i].startsWith("http") ? "noopener noreferrer" : undefined}
-                style={{ fontSize: 13, color: "#334155", textDecoration: "none", transition: "color 0.15s" }}
+                style={{ fontSize: 13, color: "#cbd5e1", textDecoration: "none", transition: "color 0.15s" }}
                 onMouseEnter={e => (e.currentTarget.style.color = "#64748b")}
-                onMouseLeave={e => (e.currentTarget.style.color = "#334155")}>
+                onMouseLeave={e => (e.currentTarget.style.color = "#cbd5e1")}>
                 {l}
               </a>
             ))}

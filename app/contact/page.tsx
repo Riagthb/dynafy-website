@@ -47,7 +47,7 @@ export default function ContactPage() {
       {/* Nav */}
       <nav style={{
         position: "sticky", top: 0, zIndex: 50,
-        borderBottom: "1px solid rgba(255,255,255,0.06)",
+        borderBottom: "1px solid rgba(15,23,42,0.08)",
         background: "rgba(7,12,26,0.85)", backdropFilter: "blur(12px)",
       }}>
         <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 24px", height: 64, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
@@ -58,7 +58,7 @@ export default function ContactPage() {
             </span>
           </Link>
           <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
-            <a href="https://app.dynafy.nl" style={{ color: "#94a3b8", textDecoration: "none", fontSize: 14, padding: "8px 16px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.1)" }}>
+            <a href="https://app.dynafy.nl" style={{ color: "#475569", textDecoration: "none", fontSize: 14, padding: "8px 16px", borderRadius: 8, border: "1px solid rgba(15,23,42,0.1)" }}>
               Inloggen
             </a>
             <a href="https://app.dynafy.nl?mode=register" style={{
@@ -87,7 +87,7 @@ export default function ContactPage() {
             je helpen?
           </span>
         </h1>
-        <p style={{ color: "#94a3b8", fontSize: 18, maxWidth: 520, margin: "0 auto" }}>
+        <p style={{ color: "#475569", fontSize: 18, maxWidth: 520, margin: "0 auto" }}>
           Stuur ons een bericht en we reageren zo snel mogelijk. Je ontvangt ook een bevestiging per e-mail.
         </p>
       </div>
@@ -101,7 +101,7 @@ export default function ContactPage() {
           }}>
             <div style={{ fontSize: 48, marginBottom: 16 }}>✅</div>
             <h2 style={{ fontWeight: 700, fontSize: 22, marginBottom: 12 }}>Bericht verstuurd!</h2>
-            <p style={{ color: "#94a3b8", marginBottom: 28 }}>
+            <p style={{ color: "#475569", marginBottom: 28 }}>
               Bedankt voor je bericht. We hebben een bevestiging gestuurd naar <strong style={{ color: "#e2e8f0" }}>{form.email}</strong>.
             </p>
             <Link href="/" style={{
@@ -114,7 +114,7 @@ export default function ContactPage() {
           </div>
         ) : (
           <form onSubmit={handleSubmit} style={{
-            background: "rgba(15,23,42,0.8)", border: "1px solid rgba(255,255,255,0.08)",
+            background: "rgba(15,23,42,0.8)", border: "1px solid rgba(15,23,42,0.08)",
             borderRadius: 16, padding: "40px 40px",
           }}>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, marginBottom: 20 }}>
@@ -123,7 +123,7 @@ export default function ContactPage() {
             </div>
 
             <div style={{ marginBottom: 20 }}>
-              <label htmlFor="subject" style={{ display: "block", fontSize: 13, fontWeight: 600, color: "#94a3b8", marginBottom: 8 }}>
+              <label htmlFor="subject" style={{ display: "block", fontSize: 13, fontWeight: 600, color: "#475569", marginBottom: 8 }}>
                 Onderwerp
               </label>
               <select
@@ -144,7 +144,7 @@ export default function ContactPage() {
             </div>
 
             <div style={{ marginBottom: 28 }}>
-              <label htmlFor="message" style={{ display: "block", fontSize: 13, fontWeight: 600, color: "#94a3b8", marginBottom: 8 }}>
+              <label htmlFor="message" style={{ display: "block", fontSize: 13, fontWeight: 600, color: "#475569", marginBottom: 8 }}>
                 Bericht
               </label>
               <textarea
@@ -189,7 +189,7 @@ export default function ContactPage() {
             { icon: "⚡", label: "Reactietijd", value: "Binnen 1–2 werkdagen", href: null },
           ].map(item => (
             <div key={item.label} style={{
-              background: "rgba(15,23,42,0.6)", border: "1px solid rgba(255,255,255,0.06)",
+              background: "rgba(15,23,42,0.6)", border: "1px solid rgba(15,23,42,0.08)",
               borderRadius: 12, padding: "20px 24px", display: "flex", alignItems: "center", gap: 14,
             }}>
               <span style={{ fontSize: 24 }}>{item.icon}</span>
@@ -217,7 +217,7 @@ function Field({ label, id, type = "text", value, onChange, placeholder, require
 }) {
   return (
     <div>
-      <label htmlFor={id} style={{ display: "block", fontSize: 13, fontWeight: 600, color: "#94a3b8", marginBottom: 8 }}>
+      <label htmlFor={id} style={{ display: "block", fontSize: 13, fontWeight: 600, color: "#475569", marginBottom: 8 }}>
         {label}
       </label>
       <input
@@ -230,7 +230,7 @@ function Field({ label, id, type = "text", value, onChange, placeholder, require
 }
 
 const inputStyle: React.CSSProperties = {
-  width: "100%", padding: "12px 14px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.1)",
+  width: "100%", padding: "12px 14px", borderRadius: 8, border: "1px solid rgba(15,23,42,0.1)",
   background: "rgba(7,12,26,0.8)", color: "#e2e8f0", fontSize: 14, outline: "none",
   boxSizing: "border-box",
   transition: "border-color 0.2s",
