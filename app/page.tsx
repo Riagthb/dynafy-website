@@ -47,31 +47,32 @@ const Plus = () => (
 const TRANSLATIONS = {
   nl: {
     // Nav
-    navLinks: ["Functies", "ZZP", "Prijzen", "FAQ", "Contact"],
-    navHrefs: ["#functies", "#zzp", "#prijzen", "#faq", "/contact"],
+    // ZZP-first (Ranny 2026-09-14)
+    navLinks: ["ZZP", "Prijzen", "Functies", "FAQ", "Contact"],
+    navHrefs: ["#zzp", "#prijzen", "#functies", "#faq", "/contact"],
     login: "Inloggen",
     ctaNav: "Gratis starten",
-    // Hero
-    badge: "AI Powered",
-    h1a: "Jouw financiën",
-    h1b: "volledig in beeld door AI",
-    h1c: "privé en zakelijk",
-    heroSub: "Dynafy combineert persoonlijk financieel beheer met volledige ZZP-administratie. Transacties, facturen, BTW en inzichten, alles op één plek.",
-    heroCta1: "Gratis beginnen",
-    heroCta2: "Bekijk functies",
+    // Hero — ZZP-first
+    badge: "Voor ZZP'ers",
+    h1a: "Jouw complete",
+    h1b: "ZZP-administratie",
+    h1c: "in één app",
+    heroSub: "Facturen versturen, kosten bijhouden, BTW berekenen — alles op één plek. Plus persoonlijke financiën als je dat wilt. Zonder los boekhoudpakket.",
+    heroCta1: "Gratis ZZP-account starten",
+    heroCta2: "Bekijk hoe het werkt",
     trustLine: "✓ Geen creditcard nodig \u00a0·\u00a0 ✓ Gratis plan altijd beschikbaar \u00a0·\u00a0 ✓ Opgezegd wanneer je wil",
     // App preview
     appPreviewLabel: "Het product",
-    appPreviewSub: "Alles overzichtelijk op één scherm — saldo, cashflow, investeringen, transacties en meer.",
+    appPreviewSub: "Van factuur tot BTW-overzicht — één app voor je hele administratie.",
     // Social proof
-    stat1Label: "Actieve gebruikers",
+    stat1Label: "Actieve ZZP'ers",
     stat2Label: "Gemiddelde beoordeling",
     stat3Label: "Om te beginnen",
-    // Features section
-    featuresLabel: "Functies",
-    featuresH2a: "Alles wat je nodig hebt,",
-    featuresH2b: "niets wat je niet nodig hebt",
-    featuresSub: "Van budgetteren tot investeringen bijhouden — Dynafy heeft het allemaal, zonder gedoe.",
+    // Features section — nu 'ook voor privé'
+    featuresLabel: "Ook voor privé",
+    featuresH2a: "En ook je persoonlijke",
+    featuresH2b: "financiën — als je dat wilt",
+    featuresSub: "Dynafy is ZZP-first, maar heeft óók alles voor je privéfinanciën: budgetteren, sparen, investeringen. Alles in dezelfde app zonder extra kosten.",
     // How it works
     howLabel: "Hoe het werkt",
     howH2: "In 3 stappen live",
@@ -79,34 +80,34 @@ const TRANSLATIONS = {
     investLabel: "Investeringen",
     investH2: "Al je beleggingen op één plek",
     investSub: "Crypto, aandelen, goud — live koersen, één overzicht. Altijd weten wat je portfolio waard is.",
-    // ZZP section
+    // ZZP section — nu de hoofdsectie
     zzpLabel: "Voor ZZP'ers",
-    zzpH2a: "Jouw complete",
-    zzpH2b: "ZZP-administratie",
-    zzpH2c: "— ingebouwd",
-    zzpSub: "Geen losse boekhoudpakket meer. Dynafy combineert je privéfinanciën met je zakelijke administratie. Facturen versturen, kosten bijhouden, BTW berekenen — vanuit één app.",
-    zzpCta: "Probeer ZZP gratis →",
+    zzpH2a: "Alles wat je als",
+    zzpH2b: "ZZP'er nodig hebt",
+    zzpH2c: "",
+    zzpSub: "Facturen, kosten, bonnen, BTW en een boekhouder-portaal — allemaal ingebouwd. Geen los boekhoudpakket meer nodig.",
+    zzpCta: "Gratis ZZP-account starten →",
     // ZZP Mockup section
-    zzpMockupLabel: "ZZP Facturen",
+    zzpMockupLabel: "Facturen",
     zzpMockupH2: "Van concept naar betaald — in minuten",
-    zzpMockupSub: "Facturen aanmaken, versturen en bijhouden. Inclusief live preview en automatische BTW-berekening.",
+    zzpMockupSub: "Facturen aanmaken, versturen en bijhouden. Live preview en automatische BTW-berekening ingebouwd.",
     // Pricing
     pricingLabel: "Prijzen",
     pricingH2: "Transparant. Geen verborgen kosten.",
     pricingSub: "Maandelijks opzegbaar · Alle prijzen excl. BTW",
     // Testimonials
     testimonialsLabel: "Ervaringen",
-    testimonialsH2: "Wat gebruikers zeggen",
+    testimonialsH2: "Wat ZZP'ers zeggen",
     // FAQ
     faqLabel: "FAQ",
     faqH2: "Veelgestelde vragen",
     // Final CTA
-    finalH2a: "Klaar om grip te krijgen",
-    finalH2b: "op je",
-    finalH2c: "financiën?",
+    finalH2a: "Klaar om je",
+    finalH2b: "administratie",
+    finalH2c: "te vereenvoudigen?",
     finalSub: "Start gratis. Geen creditcard. Geen verplichtingen.",
-    finalCta: "Gratis starten — nu direct",
-    finalSocial: "Al meer dan 500 ZZP\u2019ers en particulieren gingen je voor.",
+    finalCta: "Gratis ZZP-account starten",
+    finalSocial: "Al meer dan 500 ZZP\u2019ers gingen je voor.",
     // Footer
     footerLinks: ["Privacy", "Voorwaarden", "Contact"],
     footerLinksHrefs: ["https://app.dynafy.nl/privacy.html", "https://app.dynafy.nl/terms.html", "/contact"],
@@ -114,29 +115,29 @@ const TRANSLATIONS = {
   },
   en: {
     // Nav
-    navLinks: ["Features", "Freelance", "Pricing", "FAQ", "Contact"],
-    navHrefs: ["#functies", "#zzp", "#prijzen", "#faq", "/contact"],
+    navLinks: ["Freelance", "Pricing", "Features", "FAQ", "Contact"],
+    navHrefs: ["#zzp", "#prijzen", "#functies", "#faq", "/contact"],
     login: "Log in",
     ctaNav: "Start for free",
     // Hero
-    badge: "AI Powered",
-    h1a: "Your finances",
-    h1b: "fully in view",
-    h1c: "private and business",
-    heroSub: "Dynafy combines personal financial management with complete freelance administration. Transactions, invoices, VAT and insights, all in one place.",
-    heroCta1: "Start for free",
-    heroCta2: "View features",
+    badge: "For freelancers",
+    h1a: "Your complete",
+    h1b: "freelance administration",
+    h1c: "in one app",
+    heroSub: "Send invoices, track expenses, calculate VAT — all in one place. Plus personal finances if you want. No separate accounting package needed.",
+    heroCta1: "Start free freelance account",
+    heroCta2: "See how it works",
     trustLine: "✓ No credit card needed \u00a0·\u00a0 ✓ Free plan always available \u00a0·\u00a0 ✓ Cancel whenever you want",
     // App preview
     appPreviewLabel: "The product",
-    appPreviewSub: "Everything clearly on one screen — balance, cashflow, investments, transactions and more.",
+    appPreviewSub: "From invoice to VAT overview — one app for your entire administration.",
     // Social proof
-    stat1Label: "Active users",
+    stat1Label: "Active freelancers",
     stat2Label: "Average rating",
     stat3Label: "To get started",
     // Features section
-    featuresLabel: "Features",
-    featuresH2a: "Everything you need,",
+    featuresLabel: "Also for personal",
+    featuresH2a: "And your personal",
     featuresH2b: "nothing you don\u2019t",
     featuresSub: "From budgeting to tracking investments — Dynafy has it all, without the hassle.",
     // How it works
