@@ -138,7 +138,7 @@ const TRANSLATIONS = {
     // Features section
     featuresLabel: "Also for personal",
     featuresH2a: "And your personal",
-    featuresH2b: "nothing you don\u2019t",
+    featuresH2b: "finances too \u2014 if you want",
     featuresSub: "From budgeting to tracking investments — Dynafy has it all, without the hassle.",
     // How it works
     howLabel: "How it works",
